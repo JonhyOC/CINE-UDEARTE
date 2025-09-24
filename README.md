@@ -6,7 +6,7 @@
 
 - **Jonhy Ochoa Correa** – Mi rol en el grupo sera el de guiar y apoyar a mis compañeros para
 - lograr el mejor resultado en el desarrollo de este gran proyecto del cinema.  
-- **Nombre 2** – Descripción breve del rol en el grupo.  
+- **Josuar Loaiza Londoño** – Coordinar y combinar las habilidades y esfuerzos del equipo para transformar ideas en resultados o metas concretas de manera eficiente y efectiva.  
 - **Nombre 3** – Descripción breve del rol en el grupo.  
 - **Nombre 4** – Descripción breve del rol en el grupo.  
 
@@ -15,16 +15,18 @@
 ## 🎓 2. Vínculos Académicos y Descripción  
 
 ### 👤 Jonhy Ochoa Correa  
-- **Programa:** Ingenieria Indsutrial virtual sede el Carmen de Viboral  
+- **Programa:** Ingenieria Indsutrial virtual - Sede el Carmen de Viboral  
 - **Habilidades y fortalezas:** Apoyo en cuanto las dudas generadas, me gusta meterme en el cuento del trabajo
   y poder aportar el mayor conocimiento posible a la resolucion de cada aspecto.  
 
-### 👤 Nicoll Pamela Rosero Enriquez 
-- **Programa:** Ingenieria Industrial virtual - Sede Medellin 
-- **Habilidades y fortalezas:** Dirección de arte, creatividad visual, diseño escénico.  
+### 👤 Josuar Loaiza Londoño 
+- **Programa:** Ingenieria Industrial virtual - Sede Segovia 
+- **Habilidades y fortalezas:** Disposición en cuanto a la planeación y control de la información planteada, me identifico
+  por mi buena comprensión respecto a las opiniones dispuestas por mi equipo y por buscar la manera de mejorarlas o llevarlas
+  a cabo.  
 
-### 👤 Nombre 3  
-- **Programa:** _______________________  
+### 👤 Nicoll Pamela Rosero Enriquez  
+- **Programa:** Ingenieria Industrial virtual - Sede Medellin  
 - **Habilidades y fortalezas:** Edición de video, manejo de software audiovisual, efectos.  
 
 ### 👤 Nombre 4  
