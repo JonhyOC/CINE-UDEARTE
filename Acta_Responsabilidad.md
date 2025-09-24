@@ -10,7 +10,7 @@
 | Miembro | Rol / Responsabilidad | Fecha de Entrega | Estado |
 |---------|-----------------------|------------------|--------|
 | Jonhy Ochoa|  Dirección | 23/09/2025| Entregado |
-| Nombre 2 | Ej: Producción | __/__/__ | Pendiente |
+| Josuar Loaiza | Producción | 24/09/2025 | Entregado |
 | Nombre 3 | Ej: Edición | __/__/__ | Pendiente |
 | Nombre 4 | Ej: Confirmacion | __/__/__ | Pendiente |
 
