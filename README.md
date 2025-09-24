@@ -19,8 +19,8 @@
 - **Habilidades y fortalezas:** Apoyo en cuanto las dudas generadas, me gusta meterme en el cuento del trabajo
   y poder aportar el mayor conocimiento posible a la resolucion de cada aspecto.  
 
-### 👤 Nombre 2  
-- **Programa:** _______________________  
+### 👤 Nicoll Pamela Rosero Enriquez 
+- **Programa:** Ingenieria Industrial virtual - Sede Medellin 
 - **Habilidades y fortalezas:** Dirección de arte, creatividad visual, diseño escénico.  
 
 ### 👤 Nombre 3  
