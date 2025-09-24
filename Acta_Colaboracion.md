@@ -2,7 +2,7 @@
 
 **Fecha:** 23 / 09 / 2025  
 **Lugar:** Bello - Antioquia  
-**Integrantes presentes:** Jonhy Ochoa Correa , Nicoll Pamela Rosero Enriquez 
+**Integrantes presentes:** Jonhy Ochoa Correa , Nicoll Pamela Rosero Enriquez , Josuar Loaiza Londoño 
 
 ---
 
