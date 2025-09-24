@@ -1,7 +1,7 @@
 # 📌 Acta de Responsabilidad  
 
 **Fecha:** 23 / 09 / 2025  
-**Lugar:** Bello - Antioquia 
+**Lugar:** Medellin - Antioquia 
 **Integrantes presentes:** Jonhy Ochoa Correa
 
 ---
