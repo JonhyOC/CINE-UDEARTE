@@ -21,7 +21,7 @@
 
 ### 👤 Josuar Loaiza Londoño 
 - **Programa:** Ingenieria Industrial virtual - Sede Segovia 
-- **Habilidades y fortalezas:** Disposición en cuanto a la planeación y control de la información planteada, me identifico
+- **Habilidades y fortalezas:** Disposición en cuanto a la planeación y control de la información planteada. Me identifico
   por mi buena comprensión respecto a las opiniones dispuestas por mi equipo y por buscar la manera de mejorarlas o llevarlas
   a cabo.  
 
