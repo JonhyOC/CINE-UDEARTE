@@ -2,7 +2,7 @@
 
 **Fecha:** 23 / 09 / 2025
 **Lugar:** Medellin - Antioquia 
-**Integrantes presentes:** Jonhy Ochoa Correa.
+**Integrantes presentes:** Jonhy Ochoa Correa , Josuar Loaiza Londoño
 
 ---
 
