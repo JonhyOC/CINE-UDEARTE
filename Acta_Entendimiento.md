@@ -22,8 +22,10 @@
 - **Nombre 1:** Jonhy Ochoa Correa  
   - Expectativas: Para este proyecto espero poder aprender lo mas que se pueda de todo el proceso que incluye
     un trabajo de esta magnitud, asi mismo poder afianzar mas los conocimientos adquiridos a lo largo del curso.   
-- **Nombre 2:** ____________________________________________  
-  - Expectativas: ___________________________________________  
+- **Nombre 2:** Josuar Loaiza Londoño 
+  - Expectativas: Comprender de manera satisfactoria el proyecto que llevaremos a cabo para obtener conocimientos valiosos
+    que edifiquen mi carrera como futuro ingeniero. Teniendo en cuenta mi posición de estudiante, espero aportar ideas de gran valor
+    con respecto al trabajo presentado.  
 - **Nombre 3:** ____________________________________________  
   - Expectativas: ___________________________________________
 - **Nombre 4:** ____________________________________________
