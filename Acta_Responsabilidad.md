@@ -2,7 +2,7 @@
 
 **Fecha:** 23 / 09 / 2025  
 **Lugar:** Medellin - Antioquia 
-**Integrantes presentes:** Jonhy Ochoa Correa
+**Integrantes presentes:** Jonhy Ochoa Correa, Mariam Pertuz Otero, 
 
 ---
 
@@ -12,7 +12,7 @@
 | Jonhy Ochoa|  Dirección | 23/09/2025| Entregado |
 | Josuar Loaiza | Producción | 24/09/2025 | Entregado |
 | Nombre 3 | Ej: Edición | __/__/__ | Pendiente |
-| Nombre 4 | Ej: Confirmacion | __/__/__ | Pendiente |
+| Mariam Pertuz | Confirmacion | 24/09/25 | Pendiente |
 
 ---
 
