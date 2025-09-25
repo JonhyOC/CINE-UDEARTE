@@ -2,7 +2,7 @@
 
 **Fecha:** 23 / 09 / 2025
 **Lugar:** Medellin - Antioquia 
-**Integrantes presentes:** Jonhy Ochoa Correa , Josuar Loaiza Londoño
+**Integrantes presentes:** Jonhy Ochoa Correa, Josuar Loaiza Londoño, Mariam Pertuz Otero
 
 ---
 
@@ -28,8 +28,8 @@
     con respecto al trabajo presentado.  
 - **Nombre 3:** ____________________________________________  
   - Expectativas: ___________________________________________
-- **Nombre 4:** ____________________________________________
-  - Expectativas: ___________________________________________    
+- **Nombre 4:** Mariam Pertuz Otero
+  - Expectativas: Espero poder aprender, colaborar y aportar lo que más pueda en este trabajo. Con lo que voy a aprender, quiero ponerlo en práctica en futuros cursos mas avanzados de mi carrera y en mi vida laboral.  
 
 ---
 
