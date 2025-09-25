@@ -8,7 +8,7 @@
 - lograr el mejor resultado en el desarrollo de este gran proyecto del cinema.  
 - **Josuar Loaiza Londoño** – Coordinar y combinar las habilidades y esfuerzos del equipo para transformar ideas en resultados o metas concretas de manera eficiente y efectiva.  
 - **Nombre 3** – Descripción breve del rol en el grupo.  
-- **Nombre 4** – Descripción breve del rol en el grupo.  
+- **Mariam Pertuz** – Mi rol en el grupo sera el confirmar y rectificar que todo lo hecho este bien despues de que todos hayamos aportado y estemos de acuerdo con lo hecho.  
 
 ---
 
@@ -29,9 +29,9 @@
 - **Programa:** Ingenieria Industrial virtual - Sede Medellin  
 - **Habilidades y fortalezas:** Edición de video, manejo de software audiovisual, efectos.  
 
-### 👤 Nombre 4  
-- **Programa:** _______________________  
-- **Habilidades y fortalezas:** Producción, organización de recursos, logística.  
+### 👤 Mariam Pertuz Otero   
+- **Programa:** Ingenieria Industrial virtual - Sede Caucasia  
+- **Habilidades y fortalezas:** Me concidero buena trabajando en equipo, comunicando, escuchando a mis compañeros y colaborando. Me adapto con facilidad soy responzable y organizada.
 
 ---
 
