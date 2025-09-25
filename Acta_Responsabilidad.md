@@ -19,4 +19,8 @@
 ## 🚨 Notas Importantes
 - Cada miembro se compromete a cumplir con su responsabilidad.  
 - En caso de dificultades, el integrante deberá comunicarlo a tiempo para buscar soluciones conjuntas.  
-- Se podrán reasignar tareas si el grupo lo considera necesario.  
+- Se podrán reasignar tareas si el grupo lo considera necesario.
+
+
+[Jonhy Ochoa firma digital.pdf](https://github.com/user-attachments/files/22537230/Jonhy.Ochoa.firma.digital.pdf)
+
