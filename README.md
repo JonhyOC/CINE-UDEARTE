@@ -8,7 +8,7 @@
 - lograr el mejor resultado en el desarrollo de este gran proyecto del cinema.  
 - **Josuar Loaiza Londoño** – Coordinar y combinar las habilidades y esfuerzos del equipo para transformar ideas en resultados o metas concretas de manera eficiente y efectiva.  
 - **Nombre 3** – Descripción breve del rol en el grupo.  
-- **Mariam Pertuz** – Mi rol en el grupo sera el confirmar y rectificar que todo lo hecho este bien despues de que todos hayamos aportado y estemos de acuerdo con lo hecho.  
+- **Mariam Pertuz Otero** – Mi rol en el grupo sera el confirmar y rectificar que todo lo hecho este bien despues de que todos hayamos aportado y estemos de acuerdo con lo hecho.  
 
 ---
 
