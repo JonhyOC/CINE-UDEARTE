@@ -1,6 +1,6 @@
 # CINE - UDEARTE
 
----
+Un espacio para explorar el cine como arte, como lenguaje, y como herramienta de transformación social.
 
 ## 👥 1. Integrantes  
 
