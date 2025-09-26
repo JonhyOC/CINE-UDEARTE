@@ -7,7 +7,7 @@ Un espacio para explorar el cine como arte, como lenguaje, y como herramienta de
 - **Jonhy Ochoa Correa** – Mi rol en el grupo sera el de guiar y apoyar a mis compañeros para
 - lograr el mejor resultado en el desarrollo de este gran proyecto del cinema.  
 - **Josuar Loaiza Londoño** – Coordinar y combinar las habilidades y esfuerzos del equipo para transformar ideas en resultados o metas concretas de manera eficiente y efectiva.  
-- **Nombre 3** – Descripción breve del rol en el grupo.  
+-**Nicoll Pamela Rosero Enriquez**– Mi rol en el grupo será el de edición, encargándome de organizar, revisar y mejorar la presentación del proyecto, corrigiendo detalles y asegurando que el trabajo final tenga claridad.  
 - **Mariam Pertuz Otero** – Mi rol en el grupo sera el confirmar y rectificar que todo lo hecho este bien despues de que todos hayamos aportado y estemos de acuerdo con lo hecho.  
 
 ---
@@ -27,8 +27,7 @@ Un espacio para explorar el cine como arte, como lenguaje, y como herramienta de
 
 ### 👤 Nicoll Pamela Rosero Enriquez  
 - **Programa:** Ingenieria Industrial virtual - Sede Medellin  
-- **Habilidades y fortalezas:** Edición de video, manejo de software audiovisual, efectos.  
-
+- **Habilidades y fortalezas:** Soy alguien que se fija mucho en las cosas pequeñas y eso me ayuda a darme cuenta de detalles que a veces pasan desapercibidos ademas me gusta analizar bien las situaciones ,porque siento que así se evita errores y se encuentran mejores soluciones.  Ademas soy una persona con muy buena disposicico para trabajar en equipo .
 ### 👤 Mariam Pertuz Otero   
 - **Programa:** Ingenieria Industrial virtual - Sede Caucasia  
 - **Habilidades y fortalezas:** Me concidero buena trabajando en equipo, comunicando, escuchando a mis compañeros y colaborando. Me adapto con facilidad soy responzable y organizada.
