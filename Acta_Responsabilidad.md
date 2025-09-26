@@ -11,7 +11,7 @@
 |---------|-----------------------|------------------|--------|
 | Jonhy Ochoa|  Dirección | 23/09/2025| Entregado |
 | Josuar Loaiza | Producción | 24/09/2025 | Entregado |
-| Nombre 3 | Ej: Edición | __/__/__ | Pendiente |
+| Nicoll Rosero | Edición | 24/09/2025 | Entregado  |
 | Mariam Pertuz | Confirmacion | 24/09/2025 | Entregado |
 
 ---
