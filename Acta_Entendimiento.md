@@ -26,7 +26,7 @@
   - Expectativas: Comprender de manera satisfactoria el proyecto que llevaremos a cabo para obtener conocimientos valiosos
     que edifiquen mi carrera como futuro ingeniero. Teniendo en cuenta mi posición de estudiante, espero aportar ideas de gran valor
     con respecto al trabajo presentado.  
-- **Nombre 3:** ____________________________________________  
+- **Nombre 3:** Nicoll Pamela Rosero Enriquez   
   - Expectativas: ___________________________________________
 - **Nombre 4:** Mariam Pertuz Otero
   - Expectativas: Espero poder aprender, colaborar y aportar lo que más pueda en este trabajo. Con lo que voy a aprender, quiero ponerlo en práctica en futuros cursos mas avanzados de mi carrera y en mi vida laboral.  
