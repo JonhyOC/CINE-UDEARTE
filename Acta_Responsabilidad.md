@@ -2,7 +2,8 @@
 
 **Fecha:** 23 / 09 / 2025  
 **Lugar:** Medellin - Antioquia 
-**Integrantes presentes:** Jonhy Ochoa Correa, Mariam Pertuz Otero, Nicoll Pamela Rosero Enriquez, Josuar Loaiza Londoño.
+**Integrantes presentes:** Jonhy Ochoa Correa, Mariam Pertuz Otero, 
+  Nicoll Pamela Rosero Enriquez, Josuar Loaiza Londoño.
 
 ---
 
