@@ -152,6 +152,8 @@ gantt
     Validación final                  :conf2, 2025-11-11, 3w
 
 ---
+
+
 💰 Presupuesto en horas de practica
 
 Valor del SMLV (2025): $1,300,000 COP
