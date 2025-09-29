@@ -42,6 +42,10 @@ Un espacio para explorar el cine como arte, como lenguaje, y como herramienta de
 Este proyecto busca crear un programa funcional y optimo para poder entrar al cinema, poder hacer reservas de sillas,
 escoger la pelicula de su preferencia con el dia y la hora que mas se acomode a su tiempo.
 
+
+![WhatsApp Image 2025-09-27 at 12 04 38 AM](https://github.com/user-attachments/assets/2b2a7371-1543-41b9-8ea1-2d18329f08a6)
+
+
 ---
 
 ## 🔒 4. Licencia del Software  
