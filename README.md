@@ -44,6 +44,20 @@ escoger la pelicula de su preferencia con el dia y la hora que mas se acomode a 
 
 ---
 
+## 🔒 4. Licencia del Software  
+
+Este proyecto se distribuye bajo la licencia **MIT License**, lo que significa que:  
+
+- El software puede ser usado, copiado, modificado y distribuido libremente.  
+- Se debe incluir siempre una copia de esta licencia en cualquier distribución del proyecto.  
+- El software se proporciona **“tal cual”**, sin garantías de ningún tipo.  
+
+📌 La elección de esta licencia busca fomentar la **colaboración, aprendizaje y reutilización académica**, manteniendo la libertad de uso para la comunidad universitaria.  
+
+<font dir="auto" style="vertical-align: inherit;">
+    CINE - UDEARTE © 2025 por Jonhy Ochoa Correa, Nicoll Pamela Rosero Enriquez, Josuar Loaiza Londoño, Mariam Pertuz Otero tiene licencia CC BY-NC 4.0. Para ver una copia de esta licencia, visite https://creativecommons.org/licenses/by-nc/4.0/
+</font></font>
+
 ## 🌟 5. Reporte de Visión  
 
 El software de apoyo a este proyecto permitirá organizar y gestionar las entradas a las diferentes peliculas 
