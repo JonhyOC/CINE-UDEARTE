@@ -113,15 +113,15 @@ Su objetivo es **centralizar la información, asignar sillas de acuerdo a la pre
 | Semana | Fechas aproximadas | 
 |--------|-------------------|
 | 7 | 23 - 29 sept. | 
-| 8 | 30 sept. - 6 oct. | Coordinación de grabaciones iniciales | Cronograma de rodaje y permisos | Preparación de plantillas de edición | Seguimiento a cumplimiento de roles |
-| 9 | 7 - 13 oct. | Supervisión de grabación de escenas | Logística de actores y utilería | Ingesta y ordenamiento de material grabado | Revisión de avances iniciales |
-| 10 | 14 - 20 oct. | Continuidad de rodaje | Soporte en rodaje y transporte | Montaje preliminar | Retroalimentación del montaje inicial |
-| 11 | 21 - 27 oct. | Finalización de grabaciones | Coordinación de recursos pendientes | Edición de secuencias | Validación de continuidad narrativa |
-| 12 | 28 oct. - 3 nov. | Supervisión de postproducción | Organización de documentación | Efectos visuales y corrección de color | Evaluación de calidad técnica |
-| 13 | 4 - 10 nov. | Dirección de ajustes finales | Entrega de informes de producción | Ajustes de sonido y transiciones | Revisión conjunta del producto parcial |
-| 14 | 11 - 17 nov. | Coordinación de presentaciones | Preparación logística para cierre | Ensamblaje final del video | Validación de versión casi final |
-| 15 | 18 - 24 nov. | Presentación interna al grupo | Informe final de producción | Exportación en formatos definitivos | Verificación de entregables |
-| 16 | 25 nov. - 1 dic. | Presentación oficial | Entrega de documentación final | Respaldo y archivo del proyecto | Confirmación y cierre académico |
+| 8 | 30 sept. - 6 oct. | 
+| 9 | 7 - 13 oct. | 
+| 10 | 14 - 20 oct. | 
+| 11 | 21 - 27 oct. | 
+| 12 | 28 oct. - 3 nov. |
+| 13 | 4 - 10 nov. | 
+| 14 | 11 - 17 nov. | 
+| 15 | 18 - 24 nov. |
+| 16 | 25 nov. - 1 dic. |
 
 ---
 
