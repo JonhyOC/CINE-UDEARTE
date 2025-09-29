@@ -1,4 +1,4 @@
-# CINE - UDEARTE
+# CINE-UDEARTE
 
 Un espacio para explorar el cine como arte, como lenguaje, y como herramienta de transformación social.
 
@@ -36,7 +36,7 @@ Un espacio para explorar el cine como arte, como lenguaje, y como herramienta de
 
 ## 🏷️ 3. Nombre del Proyecto y Detalles  
 
-**Nombre del Proyecto:** CINE - UDEARTE
+**Nombre del Proyecto:** CINE-UDEARTE
 
 **Descripción en pocas líneas:**  
 Este proyecto busca crear un programa funcional y optimo para poder entrar al cinema, poder hacer reservas de sillas,
@@ -65,7 +65,7 @@ Este proyecto se distribuye bajo la licencia **MIT License**, lo que significa q
 ## 🌟 5. Reporte de Visión  
 
 El software de apoyo a este proyecto permitirá organizar y gestionar las entradas a las diferentes peliculas 
-con tarifas diferenciales para cada publico y horarios accesibles
+con tarifas diferenciales para cada publico y horarios accesibles.
 Su objetivo es **centralizar la información, asignar sillas de acuerdo a la preferencia de cada usuario**, aportando beneficios como:  
 - Horarios que se ajustan a los tiempos de cada persona.
 - Variedad de peliculas para todos.
@@ -76,17 +76,17 @@ Su objetivo es **centralizar la información, asignar sillas de acuerdo a la pre
 ## 📋 6. Especificación de Requisitos  
 
 ### ✅ Requisitos Funcionales  
-1. Registro de tareas asignadas a cada integrante.  
-2. Gestión de cronogramas y actividades.  
-3. Seguimiento de avances y reportes de progreso.  
-4. Almacenamiento de documentos del proyecto.  
+1. Registro de sillas disponibles segun pelicula, dia y horario.  
+2. Gestión efectiva de las entradas.  
+3. Rapida respuesta para que el usuario pueda escoger su asiento de manera agil y sencilla.  
+4. Expriencia funcional optima con una interfaz dinamica y llamativa.  
 
 ### ⚙️ Requisitos No Funcionales  
 1. **Usabilidad:** Interfaz sencilla e intuitiva.  
-2. **Rendimiento:** Respuesta rápida al cargar y actualizar tareas.  
+2. **Rendimiento:** Respuesta rápida al cargar y actualizar la disponibilidad de sillas.  
 3. **Compatibilidad:** Accesible desde navegadores comunes.  
-4. **Seguridad:** Acceso restringido solo a los integrantes del grupo.  
-5. **Fiabilidad:** Disponibilidad estable durante el semestre.  
+4. **Seguridad:** Libre acceso para todo tipo de usuarios garantizando su reserva a la hora de confirmar su eleccion.  
+5. **Fiabilidad:** Disponibilidad estable en cualquier hora del dia.  
 
 ---
 
