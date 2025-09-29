@@ -130,7 +130,7 @@ Su objetivo es **centralizar la información, asignar sillas de acuerdo a la pre
 
 ```mermaid
 gantt
-    title Cronograma de Actividades - Proyecto de Cinema Universitario
+    title Cronograma de Actividades - CINE-UDEARTE
     dateFormat  YYYY-MM-DD
     axisFormat  %d/%m
 
@@ -152,6 +152,7 @@ gantt
     Validación final                  :conf2, 2025-11-11, 3w
 ---
 💰 Presupuesto
+
 Valor del SMLV (2025): $1,300,000 COP
 
 Horas mensuales (jornada legal): 240 horas
