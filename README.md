@@ -151,7 +151,7 @@ gantt
     Revisión de avances               :conf1, 2025-09-30, 6w
     Validación final                  :conf2, 2025-11-11, 3w
 ---
-💰 Presupuesto en Horas de Práctica
+💰 Presupuesto
 Valor del SMLV (2025): $1,300,000 COP
 
 Horas mensuales (jornada legal): 240 horas
