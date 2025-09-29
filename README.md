@@ -36,7 +36,7 @@ Un espacio para explorar el cine como arte, como lenguaje, y como herramienta de
 
 ## 🏷️ 3. Nombre del Proyecto y Detalles  
 
-**Nombre del Proyecto:** MEGACINEMA DE LA U DE A
+**Nombre del Proyecto:** CINE - UDEARTE
 
 **Descripción en pocas líneas:**  
 Este proyecto busca crear un programa funcional y optimo para poder entrar al cinema, poder hacer reservas de sillas,
