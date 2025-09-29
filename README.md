@@ -7,7 +7,7 @@ Un espacio para explorar el cine como arte, como lenguaje, y como herramienta de
 - **Jonhy Ochoa Correa** – Mi rol en el grupo sera el de guiar y apoyar a mis compañeros para
   lograr el mejor resultado en el desarrollo de este gran proyecto del cinema.  
 - **Josuar Loaiza Londoño** – Coordinar y combinar las habilidades y esfuerzos del equipo para transformar ideas en resultados    o metas concretas de manera eficiente y efectiva.  
--**Nicoll Pamela Rosero Enriquez**– Mi rol en el grupo será el de edición, encargándome de organizar, revisar y mejorar la        presentación del proyecto, corrigiendo detalles y asegurando que el trabajo final tenga claridad.  
+- **Nicoll Pamela Rosero Enriquez**– Mi rol en el grupo será el de edición, encargándome de organizar, revisar y mejorar la        presentación del proyecto, corrigiendo detalles y asegurando que el trabajo final tenga claridad.  
 - **Mariam Pertuz Otero** – Mi rol en el grupo sera el confirmar y rectificar que todo lo hecho este bien despues de que todos    hayamos aportado y estemos de acuerdo con lo hecho.  
 
 ---
