@@ -1,6 +1,6 @@
 # 📑 Acta de Actividades  
 
-**Proyecto:** __________________________  
+**Proyecto:** CINE - UDEARTE 
 **Fecha de creación del acta:** 24 / 09 / 2025 
 **Integrantes presentes:** Jonhy Ochoa Correa, Mariam Pertuz Otero 
 
