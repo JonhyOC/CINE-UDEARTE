@@ -126,8 +126,7 @@ Su objetivo es **centralizar la información, asignar sillas de acuerdo a la pre
 ---
 
 ## 📅 Cronograma de Actividades (Diagrama de Gantt)  
-
-## 📅 Cronograma de Actividades (Diagrama de Gantt)  
+ 
 
 ```mermaid
 gantt
@@ -151,6 +150,11 @@ gantt
     section Confirmación
     Revisión de avances               :conf1, 2025-09-30, 6w
     Validación final                  :conf2, 2025-11-11, 3w
+
+---
+
+
+
 
 💰 Presupuesto en Horas de Práctica
 Valor del SMLV (2025): $1,300,000 COP
