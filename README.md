@@ -127,8 +127,7 @@ Su objetivo es **centralizar la información, asignar sillas de acuerdo a la pre
 
 ## 📅 Cronograma de Actividades (Diagrama de Gantt)  
 
-```mermaid
-gantt
+```mermaid gantt
     title Cronograma de Actividades - Proyecto de Cinema Universitario
     dateFormat  YYYY-MM-DD
     axisFormat  %d/%m
