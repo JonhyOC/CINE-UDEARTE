@@ -138,11 +138,11 @@ gantt
     
 
     section Producción
-    Logística y recursos              :prod1, 2025-09-23, 6w
+    Ideas de trabajo porpuestas       :prod1, 2025-09-23, 6w
     
     section Edición
-    Organización de material          :edit1, 2025-09-30, 2w
-    Montaje y postproducción          :edit2, 2025-10-14, 6w
+    Organización de datos             :edit1, 2025-09-30, 2w
+    Montaje y Codificacion            :edit2, 2025-10-14, 6w
     Ensamblaje final                  :edit3, 2025-11-18, 2w
 
     section Confirmación
