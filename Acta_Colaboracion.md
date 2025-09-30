@@ -8,10 +8,11 @@
 
 ## 🔧 Metodologías de Trabajo
 - **Organización:**  
-   
+  El proyecto será creado y dirigido por Jonhy Ochoa. Contará con la colaboración por parte de los demas integrantes
+  Mariam pertuz - Josuar Loaiza - Nicoll Rosero.  
 
 - **Herramientas digitales:**  
- - GitHub para control de versiones, WhatsApp para comunicación rápida. 
+  GitHub para control de versiones, WhatsApp para comunicación rápida. 
 
 ---
 
