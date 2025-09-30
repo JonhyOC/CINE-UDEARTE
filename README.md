@@ -135,17 +135,17 @@ gantt
     axisFormat  %d/%m
 
     section Dirección
-           :dir1, 2025-09-23, 5w
-           :dir2, 2025-10-28, 4w
+           dir1, 2025-09-23, 5w
+           dir2, 2025-10-28, 4w
 
     section Producción
-             :prod1, 2025-09-23, 6w
-             :prod2, 2025-11-11, 3w
+             prod1, 2025-09-23, 6w
+             prod2, 2025-11-11, 3w
 
     section Edición
-            :edit1, 2025-09-30, 2w
-            :edit2, 2025-10-14, 6
-            :edit3, 2025-11-18, 2w
+            edit1, 2025-09-30, 2w
+            edit2, 2025-10-14, 6
+            edit3, 2025-11-18, 2w
 
     section Confirmación
     Revisión de avances               :conf1, 2025-09-30, 6w
