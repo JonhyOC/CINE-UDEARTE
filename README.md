@@ -135,12 +135,11 @@ gantt
 
     section Dirección
     Creacion del proyecto             :dir1, 2025-09-23, 5w
-    Supervisión postproducción        :dir2, 2025-10-28, 4w
+    
 
     section Producción
     Logística y recursos              :prod1, 2025-09-23, 6w
-    Informe y cierre                  :prod2, 2025-11-11, 3w
-
+    
     section Edición
     Organización de material          :edit1, 2025-09-30, 2w
     Montaje y postproducción          :edit2, 2025-10-14, 6w
