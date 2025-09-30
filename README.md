@@ -134,14 +134,14 @@ gantt
     axisFormat  %d/%m
 
     section Dirección
-    Creacion del proyecto             :dir1, 2025-09-23, 5w
+    Creacion del proyecto             :dir1, 2025-09-23, 2w
     
 
     section Producción
-    Ideas de trabajo porpuestas       :prod1, 2025-09-23, 6w
+    Ideas de trabajo porpuestas       :prod1, 2025-09-23, 3w
     
     section Edición
-    Organización de datos             :edit1, 2025-09-30, 2w
+    Organización de datos             :edit1, 2025-09-30, 3w
     Montaje y Codificacion            :edit2, 2025-10-14, 6w
     Ensamblaje final                  :edit3, 2025-11-18, 2w
 
