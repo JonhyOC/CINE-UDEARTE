@@ -129,7 +129,7 @@ Su objetivo es **centralizar la información, asignar sillas de acuerdo a la pre
  
 ```mermaid
 gantt
-    title Cronograma de Actividades - Proyecto de Cinema Universitario
+    title Cronograma de Actividades - CINE-UDEARTE
     dateFormat  YYYY-MM-DD
     axisFormat  %d/%m
 
