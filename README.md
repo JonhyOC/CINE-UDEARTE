@@ -17,7 +17,7 @@ Un espacio para explorar el cine como arte, como lenguaje, y como herramienta de
 ### 👤 Jonhy Ochoa Correa  
 - **Programa:** Ingenieria Indsutrial virtual - Sede el Carmen de Viboral  
 - **Habilidades y fortalezas:** Apoyo en cuanto las dudas generadas, me gusta meterme en el cuento del trabajo
-  y poder aportar el mayor conocimiento posible a la resolucion de cada aspecto.  
+  y poder aportar el mayor conocimiento posible a la resolución de cada aspecto.  
 
 ### 👤 Josuar Loaiza Londoño 
 - **Programa:** Ingenieria Industrial virtual - Sede Segovia 
@@ -27,10 +27,10 @@ Un espacio para explorar el cine como arte, como lenguaje, y como herramienta de
 
 ### 👤 Nicoll Pamela Rosero Enriquez  
 - **Programa:** Ingenieria Industrial virtual - Sede Medellin  
-- **Habilidades y fortalezas:** Soy alguien que se fija mucho en las cosas pequeñas y eso me ayuda a darme cuenta de detalles que a veces pasan desapercibidos ademas me gusta analizar bien las situaciones ,porque siento que así se evita errores y se encuentran mejores soluciones.  Ademas soy una persona con muy buena disposicico para trabajar en equipo .
+- **Habilidades y fortalezas:** Soy alguien que se fija mucho en las cosas pequeñas y eso me ayuda a darme cuenta de detalles que a veces pasan desapercibidos ademas me gusta analizar bien las situaciones ,porque siento que así se evita errores y se encuentran mejores soluciones.  Ademas soy una persona con muy buena disposición para trabajar en equipo .
 ### 👤 Mariam Pertuz Otero   
 - **Programa:** Ingenieria Industrial virtual - Sede Caucasia  
-- **Habilidades y fortalezas:** Me concidero buena trabajando en equipo, comunicando, escuchando a mis compañeros y colaborando. Me adapto con facilidad soy responzable y organizada.
+- **Habilidades y fortalezas:** Me considero buena trabajando en equipo, comunicando, escuchando a mis compañeros y colaborando. Me adapto con facilidad soy responsable y organizada.
 
 ---
 
@@ -78,14 +78,14 @@ Su objetivo es **centralizar la información, asignar sillas de acuerdo a la pre
 ### ✅ Requisitos Funcionales  
 1. Registro de sillas disponibles segun pelicula, dia y horario.  
 2. Gestión efectiva de las entradas.  
-3. Rapida respuesta para que el usuario pueda escoger su asiento de manera agil y sencilla.  
+3. Rápida respuesta para que el usuario pueda escoger su asiento de manera ágil y sencilla.  
 4. Expriencia funcional optima con una interfaz dinamica y llamativa.  
 
 ### ⚙️ Requisitos No Funcionales  
 1. **Usabilidad:** Interfaz sencilla e intuitiva.  
 2. **Rendimiento:** Respuesta rápida al cargar y actualizar la disponibilidad de sillas.  
 3. **Compatibilidad:** Accesible desde navegadores comunes.  
-4. **Seguridad:** Libre acceso para todo tipo de usuarios garantizando su reserva a la hora de confirmar su eleccion.  
+4. **Seguridad:** Libre acceso para todo tipo de usuarios garantizando su reserva a la hora de confirmar su elección.  
 5. **Fiabilidad:** Disponibilidad estable en cualquier hora del dia.  
 
 ---
@@ -142,8 +142,8 @@ gantt
     
     section Edición
     Organización de datos             :edit1, 2025-09-30, 3w
-    Montaje y Codificacion            :edit2, 2025-10-14, 6w
-    Ensamblaje final                  :edit3, 2025-11-18, 2w
+    Montaje y Codificación            :edit2, 2025-10-14, 6w
+    Ensamblaje Final                  :edit3, 2025-11-18, 2w
 
     section Confirmación
     Revisión de avances               :conf1, 2025-09-30, 6w
