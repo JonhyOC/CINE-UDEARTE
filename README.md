@@ -127,25 +127,24 @@ Su objetivo es **centralizar la información, asignar sillas de acuerdo a la pre
 
 ## 📅 Cronograma de Actividades (Diagrama de Gantt)  
  
-
 ```mermaid
 gantt
-    title Cronograma de Actividades - CINE-UDEARTE
+    title Cronograma de Actividades - Proyecto de Cinema Universitario
     dateFormat  YYYY-MM-DD
     axisFormat  %d/%m
 
     section Dirección
-    Creacion del proyecto      :dir1, 2025-09-23, 5w
-                               
+    Planificación y rodaje            :dir1, 2025-09-23, 5w
+    Supervisión postproducción        :dir2, 2025-10-28, 4w
 
     section Producción
-             prod1, 2025-09-23, 6w
-             prod2, 2025-11-11, 3w
+    Logística y recursos              :prod1, 2025-09-23, 6w
+    Informe y cierre                  :prod2, 2025-11-11, 3w
 
     section Edición
-            edit1, 2025-09-30, 2w
-            edit2, 2025-10-14, 6
-            edit3, 2025-11-18, 2w
+    Organización de material          :edit1, 2025-09-30, 2w
+    Montaje y postproducción          :edit2, 2025-10-14, 6w
+    Ensamblaje final                  :edit3, 2025-11-18, 2w
 
     section Confirmación
     Revisión de avances               :conf1, 2025-09-30, 6w
