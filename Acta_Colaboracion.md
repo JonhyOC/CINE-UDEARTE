@@ -25,4 +25,4 @@
 ## ⚖️ Resolución de Conflictos
 - **Paso 1:** Conversación directa entre las partes involucradas.  
 - **Paso 2:** Mediación del grupo en reunión y de ser necesario la asistencia por parte del docente y el monitor.  
-- **Paso 3:** Decisión colectiva y documentada en esta acta. 
+- **Paso 3:** Decisión colectiva y documentada en esta acta.
