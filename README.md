@@ -134,7 +134,7 @@ gantt
     axisFormat  %d/%m
 
     section Dirección
-    Planificación y rodaje            :dir1, 2025-09-23, 5w
+    Creacion del proyecto             :dir1, 2025-09-23, 5w
     Supervisión postproducción        :dir2, 2025-10-28, 4w
 
     section Producción
