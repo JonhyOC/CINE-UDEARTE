@@ -150,7 +150,7 @@ gantt
     section Confirmación
     Revisión de avances               :conf1, 2025-09-30, 6w
     Validación final                  :conf2, 2025-11-11, 3w
-´´´
+```
 
 
 💰 Presupuesto en horas de practica
