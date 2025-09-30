@@ -136,7 +136,7 @@ gantt
 
     section Dirección
     Creacion del proyecto      :dir1, 2025-09-23, 5w
-                               :dir2, 2025-10-28, 4w
+                               
 
     section Producción
              prod1, 2025-09-23, 6w
