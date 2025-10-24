@@ -173,5 +173,12 @@ Total del Proyecto
 El control de versiones del proyecto se gestionará utilizando **Git y GitHub** como herramientas principales.  
 Cada actualización del proyecto seguirá una estructura clara para mantener el orden y la trazabilidad de los cambios.  
 
+### 🧾 Registro de Versiones  
+| Versión | Fecha | Descripción | Responsable |
+|----------|--------|-------------|--------------|
+| v1.0.0 | 24/10/2025 | Versión inicial del proyecto | Jonhy Ochoa Correa |
+| v1.1.0 | __/__/2025 | Primera actualización con mejoras | Nombre del responsable |
+| v1.1.1 | __/__/2025 | Corrección menor | Nombre del responsable |
+
 
 
