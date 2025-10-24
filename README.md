@@ -164,3 +164,14 @@ Total del Proyecto
 50 horas × $5,417 = $270,833 COP (equivalente en tiempo de práctica).
 
 📌 Nota: Este presupuesto no se paga en dinero, corresponde al valor académico de la práctica profesional del grupo.
+
+---
+
+
+## 🔢 8. Plan de Versionado
+
+El control de versiones del proyecto se gestionará utilizando **Git y GitHub** como herramientas principales.  
+Cada actualización del proyecto seguirá una estructura clara para mantener el orden y la trazabilidad de los cambios.  
+
+
+
