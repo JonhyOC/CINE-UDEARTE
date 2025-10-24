@@ -58,9 +58,6 @@ Este proyecto se distribuye bajo la licencia **MIT License**, lo que significa q
 
 📌 La elección de esta licencia busca fomentar la **colaboración, aprendizaje y reutilización académica**, manteniendo la libertad de uso para la comunidad universitaria.  
 
-<font dir="auto" style="vertical-align: inherit;">
-    CINE - UDEARTE © 2025 por Jonhy Ochoa Correa, Nicoll Pamela Rosero Enriquez, Josuar Loaiza Londoño, Mariam Pertuz Otero tiene licencia CC BY-NC 4.0. Para ver una copia de esta licencia, visite https://creativecommons.org/licenses/by-nc/4.0/
-</font></font>
 <a href="https://github.com/JonhyOC/CINE-UDEARTE/edit/main/README.md">CINE-UDEARTE</a> © 2025 by <a href="https://github.com/JonhyOC/CINE-UDEARTE/edit/main/README.md">Jonhy Ochoa Correa, Nicoll Pamela Rosero Enriquez, Josuar Loaiza Londoño, Mariam Pertuz Otero</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
 ## 🌟 5. Reporte de Visión  
