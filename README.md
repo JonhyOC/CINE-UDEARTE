@@ -181,4 +181,4 @@ Cada actualización del proyecto seguirá una estructura clara para mantener el 
 | v1.1.1 | __/__/2025 | Corrección menor | Nombre del responsable |
 
 
-
+📌 *El objetivo de este plan es garantizar que cada cambio quede documentado y sea fácilmente reversible si es necesario.*
