@@ -182,3 +182,69 @@ Cada actualización del proyecto seguirá una estructura clara para mantener el 
 
 
 📌 *El objetivo de este plan es garantizar que cada cambio quede documentado y sea fácilmente reversible si es necesario.*
+
+### v1.1.0 Primera Actualizacion
+
+El presente proyecto busca desarrollar un **programa de consola en Python** que permita la **gestión integral del Cinema Universitario UDEARTE**, ofreciendo una experiencia organizada para los usuarios y una administración eficiente del servicio cinematográfico.
+
+---
+
+### 🎯 Objetivo General  
+Diseñar un sistema de gestión que permita registrar usuarios, gestionar reservas de asientos, generar cobros, imprimir facturas y consultar reportes administrativos del Cinema UDEARTE.
+
+---
+
+### 🧩 Funcionalidades Principales  
+
+El programa contará con las siguientes opciones dentro de su menú principal:
+
+1. **Registrar Usuario**  
+   Permite el ingreso de nuevos usuarios al sistema, clasificándolos según su tipo:  
+   - Estudiante  
+   - Docente  
+   - Administrativo  
+   - Oficial Interno  
+   - Público Externo  
+
+2. **Registrar Reserva**  
+   El usuario podrá seleccionar película y asiento disponible de una matriz de **121 sillas (11x11)**, representadas por letras (A–K) y números (1–11).  
+   - `'O'` indica asiento disponible  
+   - `'X'` indica asiento ocupado  
+
+3. **Cancelar Reserva**  
+   Opción para eliminar una reserva previamente registrada y liberar el asiento correspondiente.
+
+4. **Consultar Funciones del Fin de Semana**  
+   Muestra las películas disponibles, su horario y clasificación.
+
+5. **Generar Factura**  
+   El sistema calculará el valor total de la reserva según el tipo de usuario y mostrará el detalle en una factura.
+
+6. **Reporte Administrativo**  
+   Opción para visualizar:
+   - Total de ingresos generados  
+   - Número de reservas activas y canceladas  
+   - Estadísticas generales del servicio
+
+7. **Salir del Sistema**  
+   Cierra la aplicación.
+
+---
+
+### 💺 Estructura de Sillas  
+
+El Cinema UDEARTE tiene una capacidad total de **121 asientos**.  
+El sistema generará una matriz de 11 filas (A–K) y 11 columnas (1–11) que podrá verse en consola de la siguiente manera:
+
+    1   2   3   4   5   6   7   8   9  10  11
+A ['O','O','O','O','O','O','O','O','O','O','O']
+B ['O','O','O','O','O','O','O','O','O','O','O']
+C ['O','O','O','O','O','O','O','O','O','O','O']
+D ['O','O','O','O','O','O','O','O','O','O','O']
+E ['O','O','O','O','O','O','O','O','O','O','O']
+F ['O','O','O','O','O','O','O','O','O','O','O']
+G ['O','O','O','O','O','O','O','O','O','O','O']
+H ['O','O','O','O','O','O','O','O','O','O','O']
+I ['O','O','O','O','O','O','O','O','O','O','O']
+J ['O','O','O','O','O','O','O','O','O','O','O']
+K ['O','O','O','O','O','O','O','O','O','O','O']
