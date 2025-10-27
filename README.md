@@ -236,15 +236,27 @@ El programa contará con las siguientes opciones dentro de su menú principal:
 El Cinema UDEARTE tiene una capacidad total de **121 asientos**.  
 El sistema generará una matriz de 11 filas (A–K) y 11 columnas (1–11) que podrá verse en consola de la siguiente manera:
 
+
     1   2   3   4   5   6   7   8   9  10  11
+    
 A ['O','O','O','O','O','O','O','O','O','O','O']
+
 B ['O','O','O','O','O','O','O','O','O','O','O']
+
 C ['O','O','O','O','O','O','O','O','O','O','O']
+
 D ['O','O','O','O','O','O','O','O','O','O','O']
+
 E ['O','O','O','O','O','O','O','O','O','O','O']
+
 F ['O','O','O','O','O','O','O','O','O','O','O']
+
 G ['O','O','O','O','O','O','O','O','O','O','O']
+
 H ['O','O','O','O','O','O','O','O','O','O','O']
+
 I ['O','O','O','O','O','O','O','O','O','O','O']
+
 J ['O','O','O','O','O','O','O','O','O','O','O']
+
 K ['O','O','O','O','O','O','O','O','O','O','O']
