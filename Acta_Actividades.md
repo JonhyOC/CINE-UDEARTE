@@ -26,4 +26,4 @@
 
 ---
 
-✍️ *Última actualización:* 24 / 10 / 2025
+✍️ *Última actualización:* 27 / 10 / 2025
