@@ -237,7 +237,7 @@ El Cinema UDEARTE tiene una capacidad total de **121 asientos**.
 El sistema generará una matriz de 11 filas (A–K) y 11 columnas (1–11) que podrá verse en consola de la siguiente manera:
 
 
-  1   2   3   4   5   6   7   8   9  10  11
+     1   2   3   4   5   6   7   8   9  10  11
 
     
 A ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
