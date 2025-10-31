@@ -15,7 +15,7 @@
 | 3  | 24/10/2025 | 6:30 AM |  Virtual | Actualizacion de Licencia  | Se actualizó la version de la licencia y se empezaron a definir las versiones | Jonhy Ochoa | 27/10/25 |
 | 4 | 27/10/2025 | 7:00 AM |  Virtual | Actualizacion de versión  | Se hizo la actualizacion versión 1.1.0 del programa en Markdown | Jonhy Ochoa | 29/10/25 |
 | 5 | 27/10/2025 | 7:00 AM |  Virtual | Actualizacion de versión  | Se hizo la actualizacion versión 1.1.0 del programa en Markdown | Jonhy Ochoa | 29/10/25 |
-| 6 | 29/10/2025 | 11:15 AM |  Virtual | Retroalimentación y asignación de trabajo | Se realizó la asignación de trabajo para el grupo en general, teniendo en cuenta las habilidades de cada compañero. Consecutivo a esto, se retroalimentaron puntos importantes del trabajo para mayor claridad de todo el equipo | Josuar Loaiza | 30/10/25 |
+| 6 | 29/10/2025 | 11:15 AM |  Virtual | Retroalimentación y asignación de trabajo | Se realizó la asignación de trabajo para el grupo en general, teniendo en cuenta las habilidades de cada compañero. Consecutivo a esto, se retroalimentaron puntos importantes del trabajo para mayor claridad de todo el equipo | Josuar Loaiza | 02/11/25 |
 
 
 ---
