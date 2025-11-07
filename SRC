@@ -1,1 +1,81 @@
+# =============================================
+# 🎬 CINEMA UDEARTE - MENÚ PRINCIPAL
+# Proyecto Universitario de Gestión de Cinema
+# =============================================
+
+import os
+import sys
+import time
+
+def limpiar_pantalla():
+    """Limpia la pantalla según el sistema operativo."""
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def mostrar_titulo():
+    """Muestra el encabezado del Cinema UDEARTE."""
+    print("===============================================")
+    print("      ██████╗██╗███╗   ██╗███████╗███╗   ███╗ ")
+    print("     ██╔════╝██║████╗  ██║██╔════╝████╗ ████║ ")
+    print("     ██║     ██║██╔██╗ ██║█████╗  ██╔████╔██║ ")
+    print("     ██║     ██║██║╚██╗██║██╔══╝  ██║╚██╔╝██║ ")
+    print("     ╚██████╗██║██║ ╚████║███████╗██║ ╚═╝ ██║ ")
+    print("      ╚═════╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝     ╚═╝ ")
+    print("===============================================")
+    print("             CINEMA UNIVERSITARIO UDEARTE")
+    print("===============================================\n")
+
+def mostrar_menu():
+    """Muestra las opciones principales del sistema."""
+    print("Bienvenido al Cinema Universitario UDEARTE\n")
+    print("1. Registrar Usuario")
+    print("2. Registrar Reserva")
+    print("3. Cancelar Reserva")
+    print("4. Consultar Funciones Fin de Semana")
+    print("5. Administrador")
+    print("6. Salir\n")
+
+def pausar():
+    """Pausa la ejecución hasta que el usuario presione Enter."""
+    input("\nPresiona Enter para continuar...")
+
+def main():
+    """Función principal del programa."""
+    while True:
+        limpiar_pantalla()
+        mostrar_titulo()
+        mostrar_menu()
+        try:
+            opcion = int(input("Selecciona una opción (1-6): "))
+        except ValueError:
+            print("\n⚠️  Por favor ingresa un número válido (1 al 6).")
+            time.sleep(1.5)
+            continue
+
+        if opcion == 1:
+            print("\n👉 Opción 1: Registrar Usuario")
+            pausar()
+        elif opcion == 2:
+            print("\n👉 Opción 2: Registrar Reserva")
+            pausar()
+        elif opcion == 3:
+            print("\n👉 Opción 3: Cancelar Reserva")
+            pausar()
+        elif opcion == 4:
+            print("\n👉 Opción 4: Consultar Funciones Fin de Semana")
+            pausar()
+        elif opcion == 5:
+            print("\n👉 Opción 5: Administrador")
+            pausar()
+        elif opcion == 6:
+            print("\n👋 Gracias por usar el Cinema UDEARTE. ¡Hasta pronto!")
+            time.sleep(1.5)
+            limpiar_pantalla()
+            sys.exit()
+        else:
+            print("\n⚠️  Opción fuera de rango. Intenta nuevamente.")
+            time.sleep(1.5)
+
+# Punto de entrada del programa
+if __name__ == "__main__":
+    main()
 
