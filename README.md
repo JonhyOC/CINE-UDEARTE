@@ -80,11 +80,37 @@ Su objetivo es **centralizar la información, asignar sillas de acuerdo a la pre
 4. Expriencia funcional optima con una interfaz dinamica y llamativa.  
 
 ### ⚙️ Requisitos No Funcionales  
-1. **Usabilidad:** Interfaz sencilla e intuitiva.  
-2. **Rendimiento:** Respuesta rápida al cargar y actualizar la disponibilidad de sillas.  
-3. **Compatibilidad:** Accesible desde navegadores comunes.  
-4. **Seguridad:** Libre acceso para todo tipo de usuarios garantizando su reserva a la hora de confirmar su elección.  
-5. **Fiabilidad:** Disponibilidad estable en cualquier hora del dia.  
+1. **Usabilidad:** Interfaz sencilla e intuitiva.
+   El sistema está diseñado con una **interfaz de consola sencilla e intuitiva**, orientada a facilitar la interacción del usuario.  
+   - Los menús presentan **opciones numeradas** claramente identificadas (Registrar Usuario, Reservar Asiento, Cancelar, etc.).  
+   - Las instrucciones se muestran en lenguaje claro y ordenado, sin necesidad de conocimientos técnicos previos.  
+   - Los mensajes del sistema orientan al usuario en cada paso, reduciendo errores durante el proceso de reserva.  
+   - Se prioriza la **legibilidad del texto**, utilizando espacios, líneas y separadores para guiar visualmente la navegación.
+      
+2. **Rendimiento:** Respuesta rápida al cargar y actualizar la disponibilidad de sillas.
+   El programa ofrece una **respuesta inmediata** al ejecutar acciones como cargar el estado de las sillas, registrar usuarios o confirmar reservas. 
+   - La matriz de 121 asientos se actualiza dinámicamente en tiempo real.  
+   - Las operaciones principales (registro, consulta, cancelación) se ejecutan en **menos de un segundo** en un entorno de consola estándar.  
+   - El código está optimizado para manejar múltiples usuarios y operaciones consecutivas sin afectar la velocidad de ejecución.
+      
+3. **Compatibilidad:** Accesible desde navegadores comunes.
+   El sistema es **totalmente portable** y puede ejecutarse desde cualquier entorno compatible con Python.  
+   - Funciona en **Windows, macOS y Linux**, sin necesidad de instalación adicional.  
+   - Es accesible desde terminales de línea de comandos y entornos de desarrollo integrados (VS Code, PyCharm, etc.).  
+   - Permite la integración con navegadores o herramientas externas en versiones futuras (por ejemplo, para visualización web o informes).
+        
+4. **Seguridad:** Libre acceso para todo tipo de usuarios garantizando su reserva a la hora de confirmar su elección.
+   Aunque el sistema permite un **acceso libre a los menús principales**, se garantiza la seguridad de las reservas y la información del usuario        mediante:  
+   - Confirmación obligatoria antes de registrar o cancelar una reserva.  
+   - Validación de datos al ingresar identificaciones o tipos de usuario.  
+   - Evita duplicaciones o sobreescrituras de asientos ya ocupados.  
+   - Los datos almacenados (usuarios, reservas, facturas) pueden guardarse en archivos protegidos o de solo lectura según el rol del operador.  
+ 
+5. **Fiabilidad:** Disponibilidad estable en cualquier hora del dia.
+   El sistema garantiza una **disponibilidad continua y estable** durante cualquier hora del día, siempre que el programa esté en ejecución.  
+   - La gestión de reservas y asientos se mantiene coherente incluso tras múltiples operaciones.  
+   - Los registros se actualizan y guardan automáticamente, evitando pérdidas en caso de cierres inesperados.  
+   - Permite la recuperación del estado del cinema desde archivos guardados para continuar las operaciones sin interrupciones.  
 
 ---
 
