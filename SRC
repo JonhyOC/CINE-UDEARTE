@@ -21,7 +21,7 @@ def mostrar_titulo():
     print("     ╚██████╗██║██║ ╚████║███████╗ ")
     print("      ╚═════╝╚═╝╚═╝  ╚═══╝╚══════╝ ")
     print("===============================================")
-    print("             CINEMA UNIVERSITARIO UDEARTE")
+    print("      CINEMA UNIVERSITARIO UDEARTE      ")
     print("===============================================\n")
 
 def mostrar_menu():
