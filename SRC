@@ -6,6 +6,7 @@
 import os
 import sys
 import time
+import re # Se importa pero no se usa aún. ¡Manténlo para futuras validaciones de formato!
 
 def limpiar_pantalla():
     """Limpia la pantalla según el sistema operativo."""
@@ -13,16 +14,16 @@ def limpiar_pantalla():
 
 def mostrar_titulo():
     """Muestra el encabezado del Cinema UDEARTE."""
-    print     ("===============================================")
-    print("      ██████╗██╗███╗   ██╗███████╗ ███╗   ███╗ █████╗     ")
-    print("     ██╔════╝██║████╗  ██║██╔════╝ ████╗ ████║██╔══██╗    ")
-    print("     ██║     ██║██╔██╗ ██║█████╗   ██╔████╔██║███████║    ")
-    print("     ██║     ██║██║╚██╗██║██╔══╝   ██║╚██╔╝██║██╔══██║    ")
-    print("     ╚██████╗██║██║ ╚████║███████╗ ██║ ╚═╝ ██║██║  ██║    ")
-    print("      ╚═════╝╚═╝╚═╝  ╚═══╝╚══════╝ ╚═╝     ╚═╝╚═╝  ╚═╝    ")
-    print     ("===============================================")
-    print         ("      CINEMA UNIVERSITARIO UDEARTE      ")
-    print     ("===============================================\n")
+    print("===============================================")
+    print("      ██████╗██╗███╗   ██╗███████╗ ███╗   ███╗ █████╗      ")
+    print("     ██╔════╝██║████╗  ██║██╔════╝ ████╗ ████║██╔══██╗     ")
+    print("     ██║     ██║██╔██╗ ██║█████╗   ██╔████╔██║███████║     ")
+    print("     ██║     ██║██║╚██╗██║██╔══╝   ██║╚██╔╝██║██╔══██║     ")
+    print("     ╚██████╗██║██║ ╚████║███████╗ ██║ ╚═╝ ██║██║  ██║     ")
+    print("      ╚═════╝╚═╝╚═╝  ╚═══╝╚══════╝ ╚═╝     ╚═╝╚═╝  ╚═╝     ")
+    print("===============================================")
+    print("       CINEMA UNIVERSITARIO UDEARTE      ")
+    print("===============================================\n")
 
 def mostrar_menu():
     """Muestra las opciones principales del sistema."""
@@ -34,16 +35,117 @@ def mostrar_menu():
     print("5. Administrador")
     print("6. Salir\n")
 
+
+# =============================================
+# 🎟️  Módulo: Registrar Usuario - CINEMA UDEARTE
+# =============================================
+
+def registrar_usuario():
+    limpiar_pantalla()
+    mostrar_titulo()
+    print("\n=== REGISTRO DE USUARIO ===\n")
+
+    # --- Validar nombre ---
+    while True:
+        nombre = input("Ingrese el nombre: ").strip().title() # Capitaliza la primera letra
+        errores = []
+        # Validación: Usar 're' para validar que solo haya letras y espacios si se desea
+        # if not re.match(r"^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$", nombre):
+        #    errores.append("❌ El nombre solo debe contener letras.")
+        if len(nombre) < 3:
+            errores.append("❌ El nombre debe tener al menos 3 letras.")
+        if any(char.isdigit() for char in nombre):
+            errores.append("❌ El nombre no puede contener números.")
+        if errores:
+            print("\n".join(errores), "\nIntente de nuevo.\n")
+            continue
+        break
+
+    # --- Validar apellido ---
+    while True:
+        apellido = input("Ingrese el apellido: ").strip().title() # Capitaliza la primera letra
+        errores = []
+        if len(apellido) < 3:
+            errores.append("❌ El apellido debe tener al menos 3 letras.")
+        if any(char.isdigit() for char in apellido):
+            errores.append("❌ El apellido no puede contener números.")
+        if errores:
+            print("\n".join(errores), "\nIntente de nuevo.\n")
+            continue
+        break
+
+    # --- Validar documento ---
+    while True:
+        documento = input("Ingrese el número de documento: ").strip()
+        errores = []
+        if not documento.isdigit():
+            errores.append("❌ El documento solo debe contener números.")
+        if len(documento) < 3 or len(documento) > 15:
+            errores.append("❌ El documento debe tener entre 3 y 15 dígitos.")
+        if errores:
+            print("\n".join(errores), "\nIntente de nuevo.\n")
+            continue
+        break
+
+    # --- Seleccionar tipo de vínculo ---
+    tipos_vinculo = {
+        "1": ("Estudiante", 7500),
+        "2": ("Docente", 10000),
+        "3": ("Administrativo", 8500),
+        "4": ("Oficial interno", 7000),
+        "5": ("Público externo", 15000)
+    }
+
+    print("\nSeleccione el tipo de vínculo:")
+    for clave, (tipo, valor) in tipos_vinculo.items():
+        # Formato de miles mejorado
+        print(f"{clave}. {tipo.ljust(15)} → ${valor:,}") 
+
+    while True:
+        opcion = input("\nIngrese el número correspondiente: ").strip()
+        if opcion not in tipos_vinculo:
+            print("❌ Opción no válida. Por favor, seleccione una opción del 1 al 5.\n")
+            continue
+        tipo_vinculo, valor_tiquete = tipos_vinculo[opcion]
+        break
+
+    # --- Mostrar resumen del usuario registrado ---
+    print("\n" + "="*40)
+    print("✅ Usuario registrado exitosamente:")
+    print(f"Nombre completo   : {nombre} {apellido}")
+    print(f"Documento         : {documento}")
+    print(f"Tipo de vínculo   : {tipo_vinculo}")
+    print(f"Valor del tiquete : ${valor_tiquete:,}")
+    print("="*40)
+    print("\nGracias por registrarse en el Cinema UDEARTE 🎬")
+
+    time.sleep(2)
+    input("\nPresiona Enter para volver al menú principal...")
+
+    # Retorna los datos por si se desean usar en otro módulo
+    return {
+        "nombre": nombre,
+        "apellido": apellido,
+        "documento": documento,
+        "vinculo": tipo_vinculo,
+        "valor_tiquete": valor_tiquete
+    }
+
+
 def pausar():
     """Pausa la ejecución hasta que el usuario presione Enter."""
     input("\nPresiona Enter para continuar...")
 
 def main():
     """Función principal del programa."""
+    # Declarar 'usuario' antes del bucle para que esté disponible globalmente (si se necesita)
+    usuario = None 
+
     while True:
         limpiar_pantalla()
         mostrar_titulo()
         mostrar_menu()
+        
         try:
             opcion = int(input("Selecciona una opción (1-6): "))
         except ValueError:
@@ -51,11 +153,13 @@ def main():
             time.sleep(1.5)
             continue
 
+        # El bloque de IF/ELIF/ELSE DEBE estar aquí DENTRO del 'while True'
         if opcion == 1:
-            print("\n👉 Opción 1: Registrar Usuario")
-            pausar()
+            # No es necesario el print aquí, ya que registrar_usuario() limpia y muestra su propio título.
+            usuario = registrar_usuario()
         elif opcion == 2:
             print("\n👉 Opción 2: Registrar Reserva")
+            # Aquí podrías usar 'usuario' si está registrado
             pausar()
         elif opcion == 3:
             print("\n👉 Opción 3: Cancelar Reserva")
@@ -78,4 +182,3 @@ def main():
 # Punto de entrada del programa
 if __name__ == "__main__":
     main()
-
