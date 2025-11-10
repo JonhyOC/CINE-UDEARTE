@@ -289,7 +289,13 @@ J ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 K ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 
 
-### v1.1.1 Primera Actualizacion
+### v1.1.1 Primera Actualización.
 
 De acuerdo a las especificaciones y avances del programa los requisitos no funcionales han sido mejorados para ser mas
 explícitos y claros, dando mayor objetividad en cuanto a usabilidad, rendimiento, compatibilidad, seguridad y fiabilidad.
+
+
+### v2.0.0 Creación y actualizacion del código.
+
+En ésta parte se empieza la implementacion del código que busca inicialmente capturar los datos del ususario. En las siguientes versiones el código será mas funcional dando la opcion al usuario de poder escoger su película favorita, asiento, fecha y hora 
+en la que desea ver la función.
