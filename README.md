@@ -205,7 +205,7 @@ Cada actualización del proyecto seguirá una estructura clara para mantener el 
 | v1.0.0 | 24/10/2025 | Versión inicial del proyecto | Jonhy Ochoa Correa |
 | v1.1.0 | 27/10/2025 | Primera actualización con mejoras | Jonhy Ochoa Correa |
 | v1.1.1 | 07/11/2025 | Actualizacion de los requisitos no funcionales del programa | Jonhy Ochoa Correa |
-| v1.0.0 | 24/10/2025 | Versión inicial del proyecto | Jonhy Ochoa Correa |
+| v2.0.0 | 10/11/2025 | Creacion del Codigo y actualizacion | Jonhy Ochoa Correa |
 
 📌 *El objetivo de este plan es garantizar que cada cambio quede documentado y sea fácilmente reversible si es necesario.*
 
@@ -233,7 +233,7 @@ El programa contará con las siguientes opciones dentro de su menú principal:
    - Público Externo  
 
 2. **Registrar Reserva**  
-   El usuario podrá seleccionar película y asiento disponible de una matriz de **121 sillas (11x11)**, representadas por letras (A–K) y números (1–11).  
+   El usuario podrá seleccionar película y asiento disponible de una matriz de **121 sillas (11x11)**, representadas por letras    (A–K) y números (1–11).  
    - `'O'` indica asiento disponible  
    - `'X'` indica asiento ocupado  
 
@@ -287,3 +287,9 @@ I ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 J ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 
 K ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+
+### v1.1.1 Primera Actualizacion
+
+De acuerdo a las especificaciones y avances del programa los requisitos no funcionales han sido mejorados para ser mas
+explícitos y claros, dando mayor objetividad en cuanto a usabilidad, rendimiento, compatibilidad, seguridad y fiabilidad.
