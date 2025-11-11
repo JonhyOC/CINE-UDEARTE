@@ -74,10 +74,18 @@ Su objetivo es **centralizar la información, asignar sillas de acuerdo a la pre
 ## 📋 6. Especificación de Requisitos  
 
 ### ✅ Requisitos Funcionales  
-1. Registro de sillas disponibles segun pelicula, dia y horario.  
-2. Gestión efectiva de las entradas.  
-3. Rápida respuesta para que el usuario pueda escoger su asiento de manera ágil y sencilla.  
-4. Expriencia funcional optima con una interfaz dinamica y llamativa.  
+1. Registro de sillas disponibles :
+Este sistema permite que se mantenga un control de disponibilidad. La actualización de cada cambio realizado ayudará al usuario a obtener la información precisa sobre el asiento que requiera o solicite obtener. El usuario podrá observar de manera precisa que asiento se encuentra disponible respecto a la película y el horario que lo requiera sin ninguna complicación, permitiendo así la clara información desde la plataforma y la satisfacción del usuario desde su propia comodidad. Para lograr esto, la plataforma se encarga de reorganizarse según las acciones realizadas por el usuario (registro de reservas, cancelaciones, etc.) Esto de manera automática para mantener el estado real sin necesidad de reiniciar el sistema y ofrecer una grata experiencia.
+
+2. Gestión efectiva de ingreso:
+Abarca la información precisa de los usuarios respecto a su reservación, como: nombre y datos personales, crear y/o cancelar reservas, y, la actualización automática del estado del asiento seleccionado. Con este método se elimina la posibilidad de duplicaciones y se mantiene el orden requerido para cumplir con cada función sin ninguna complicación.
+
+3. Facilitar la navegación y selección de asientos mediante un flujo guiado:
+El sistema mantiene una interfaz fácil de utilizar para evitar controversias a la hora de su navegación, manteniendo así, un menú lógico que permita su optima funcionalidad. El usuario podrá realizar de manera sencilla diferentes funciones dentro de la plataforma. En el caso de la reservación, para obtener el asiento que solicita de manera exitosa, se guiará de los siguientes pasos: ingresar a la plataforma, elegir película, elegir horario según su disponibilidad, visualizar la sala, escoger una silla válida y confirmar la reserva con ayuda de sus datos personales. 
+
+4. Generación de facturas o información final de la reservas existentes:
+Cada usuario tendrá la posibilidad de observar el estado de su reservación o cancelación en el momento que lo solicite. Allí encontrará su acción de manera efectuada, acompañada de: nombre de usuario, película, horario, número de silla y estado de la transacción.
+
 
 ### ⚙️ Requisitos No Funcionales  
 1. **Usabilidad:** Interfaz sencilla e intuitiva.
