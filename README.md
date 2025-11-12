@@ -215,6 +215,7 @@ Cada actualización del proyecto seguirá una estructura clara para mantener el 
 | v1.1.1 | 07/11/2025 | Actualizacion de los requisitos no funcionales del programa | Jonhy Ochoa Correa |
 | v2.0.0 | 10/11/2025 | Creacion del Codigo y actualizacion | Jonhy Ochoa Correa |
 | v2.1.0 | 11/11/2025 | Actualizacion de los requisitos funcionales del programa | Nicoll Pamale Rosero Enriquez |
+| v2.2.0 | 12/11/2025 | Actualizacion del codigo  | Mariam Pertuz Otero |
 
 📌 *El objetivo de este plan es garantizar que cada cambio quede documentado y sea fácilmente reversible si es necesario.*
 
