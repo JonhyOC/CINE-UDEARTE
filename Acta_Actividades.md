@@ -16,7 +16,7 @@
 | 4 | 27/10/2025 | 7:00 AM |  Virtual | Actualizacion de versión  | Se hizo la actualizacion versión 1.1.0 del programa en Markdown | Jonhy Ochoa | 29/10/25 |
 | 5 | 27/10/2025 | 7:00 AM |  Virtual | Actualizacion de versión  | Se hizo la actualizacion versión 1.1.0 del programa en Markdown | Jonhy Ochoa | 29/10/25 |
 | 6 | 29/10/2025 | 11:15 AM |  Virtual | Retroalimentación y asignación de trabajo | Se realizó la asignación de trabajo para el grupo en general, teniendo en cuenta las habilidades de cada compañero. Consecutivo a esto, se retroalimentaron puntos importantes del trabajo para mayor claridad de todo el equipo | Josuar Loaiza, Mariam Pertuz, Jonhy Ochoa, Nicoll Rosero | 12/11/25 |
-| 7 | 12/11/2025 | 10:30 AM |  Virtual | Actualización y asignación de tarea | Se realizo | Nombres de todos | 09/11/25 |
+| 7 | 12/11/2025 | 10:30 AM |  Virtual | Actualización y asignación de tarea | Se comparte lo trabajado hasta el momento y se asigna una parte de la codificación a cada uno de los integrantes | Mariam Pertuz, Jonhy Ochoa, Josuar Loaiza, Nicoll Rosero | 19/11/25 | 
 
 
 ---
