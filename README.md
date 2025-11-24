@@ -246,8 +246,8 @@ El programa contará con las siguientes opciones dentro de su menú principal:
 
 2. **Registrar Reserva**  
    El usuario podrá seleccionar película y asiento disponible de una matriz de **121 sillas (11x11)**, representadas por letras    (A–K) y números (1–11).  
-   - `'O'` indica asiento disponible  
-   - `'X'` indica asiento ocupado  
+   - `'O'` indica asiento disponible.  
+   - `'X'` indica asiento ocupado.  
 
 3. **Cancelar Reserva**  
    Opción para eliminar una reserva previamente registrada y liberar el asiento correspondiente.
@@ -260,9 +260,9 @@ El programa contará con las siguientes opciones dentro de su menú principal:
 
 6. **Reporte Administrativo**  
    Opción para visualizar:
-   - Total de ingresos generados  
-   - Número de reservas activas y canceladas  
-   - Estadísticas generales del servicio
+   - Total de ingresos generados.  
+   - Número de reservas activas y canceladas.  
+   - Estadísticas generales del servicio.
 
 7. **Salir del Sistema**  
    Cierra la aplicación.
@@ -313,7 +313,7 @@ K ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 
 ### v2.1.0 Actualización de requisitos funcionales del programa.
 
-    Con el codigo trabajado hasta el momento los requisitos no funcionales han sido optimizados permitiendo al usuario hacer      procesos como:
+    Con el código trabajado hasta el momento los requisitos no funcionales han sido optimizados permitiendo al usuario hacer      procesos como:
    -Mostrar al usuario un mapa de asientos con estados visibles.
    -Verificar la existencia de un usuario antes de crear o cancelar reservas.
    -Menús claros y ordenados para elegir entre registrar usuario, ver películas, reservar, cancelar, pagar o consultar            información.
@@ -321,12 +321,12 @@ K ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 
 ### v2.2.0 Actualización del codigo. 
 
-    Con ésta actualizacion el código permite al usuario un registro efectivo y ágil de sus datos, permitiendo acceder al menú     para así desplegar las opciones de seleccion de usuario y los tipos de asientos disponebles así como su factura               correspondiente.
+    Con ésta actualización el código permite al usuario un registro efectivo y ágil de sus datos, permitiendo acceder al menú     para así desplegar las opciones de seleccion de usuario y los tipos de asientos disponebles así como su factura               correspondiente.
 
     
 ### v2.3.0 Actualización del codigo. 
 
-    Con ésta nueva actualizacion ahora el código es más funcional, permitiendo al usuario cancelar las reservas hechas hasta      el momento sin perder su registro
+    Con ésta nueva actualización ahora el código es más funcional, permitiendo al usuario cancelar las reservas hechas hasta      el momento sin perder su registro.
 
 
 
