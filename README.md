@@ -214,8 +214,10 @@ Cada actualización del proyecto seguirá una estructura clara para mantener el 
 | v1.1.0 | 27/10/2025 | Primera actualización con mejoras | Jonhy Ochoa Correa |
 | v1.1.1 | 07/11/2025 | Actualizacion de los requisitos no funcionales del programa | Jonhy Ochoa Correa |
 | v2.0.0 | 10/11/2025 | Creacion del Codigo y actualizacion | Jonhy Ochoa Correa |
-| v2.1.0 | 11/11/2025 | Actualizacion de los requisitos funcionales del programa | Nicoll Pamale Rosero Enriquez |
+| v2.1.0 | 11/11/2025 | Actualizacion de los requisitos funcionales del programa | Nicoll Pamela Rosero Enriquez |
 | v2.2.0 | 12/11/2025 | Actualizacion del codigo  | Mariam Pertuz Otero |
+| v2.3.0 | 24/11/2025 | Actualizacion del codigo  | Jonhy Ochoa Correa |
+
 
 📌 *El objetivo de este plan es garantizar que cada cambio quede documentado y sea fácilmente reversible si es necesario.*
 
@@ -301,11 +303,30 @@ K ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 
 ### v1.1.1 Primera Actualización.
 
-De acuerdo a las especificaciones y avances del programa los requisitos no funcionales han sido mejorados para ser mas
-explícitos y claros, dando mayor objetividad en cuanto a usabilidad, rendimiento, compatibilidad, seguridad y fiabilidad.
+    De acuerdo a las especificaciones y avances del programa los requisitos no funcionales han sido mejorados para ser mas
+    explícitos y claros, dando mayor objetividad en cuanto a usabilidad, rendimiento, compatibilidad, seguridad y fiabilidad.
 
 
 ### v2.0.0 Creación y actualización del código.
 
-En ésta parte se empieza la implementacion del código que busca inicialmente capturar los datos del ususario. En las siguientes versiones el código será mas funcional dando la opcion al usuario de poder escoger su película favorita, asiento, fecha y hora 
-en la que desea ver la función.
+    En ésta parte se empieza la implementacion del código que busca inicialmente capturar los datos del ususario. En las          siguientes versiones el código será mas funcional dando la opcion al usuario de poder escoger su película favorita,           asiento, fecha y hora en la que desea ver la función.
+
+### v2.1.0 Actualización de requisitos funcionales del programa.
+
+    Con el codigo trabajado hasta el momento los requisitos no funcionales han sido optimizados permitiendo al usuario hacer      procesos como:
+   -Mostrar al usuario un mapa de asientos con estados visibles.
+   -Verificar la existencia de un usuario antes de crear o cancelar reservas.
+   -Menús claros y ordenados para elegir entre registrar usuario, ver películas, reservar, cancelar, pagar o consultar            información.
+   -Mostrar el nombre del usuario, tipo de usuario, silla reservada y valor a pagar.
+
+### v2.2.0 Actualización del codigo. 
+
+    Con ésta actualizacion el código permite al usuario un registro efectivo y ágil de sus datos, permitiendo acceder al menú     para así desplegar las opciones de seleccion de usuario y los tipos de asientos disponebles así como su factura               correspondiente.
+
+    
+### v2.3.0 Actualización del codigo. 
+
+    Con ésta nueva actualizacion ahora el código es más funcional, permitiendo al usuario cancelar las reservas hechas hasta      el momento sin perder su registro
+
+
+
