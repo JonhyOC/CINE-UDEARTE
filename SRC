@@ -6,14 +6,30 @@
 import os
 import sys
 import time
-import re # Se importa pero no se usa aún. ¡Manténlo para futuras validaciones de formato!
+import re
+
+# ============================
+#  MATRIZ DE ASIENTOS
+# ============================
+
+filas = ["A","B","C","D","E","F","G","H","I","J","K"]
+columnas = ["1","2","3","4","5","6","7","8","9","10","11"]
+
+# 11 filas x 11 columnas llenas de "O"
+asientos = [["O" for _ in range(11)] for _ in range(11)]
+
+# Lista global de reservas
+reservas = []
+
+
+# ============================
+# Funciones auxiliares
+# ============================
 
 def limpiar_pantalla():
-    """Limpia la pantalla según el sistema operativo."""
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def mostrar_titulo():
-    """Muestra el encabezado del Cinema UDEARTE."""
     print("===============================================")
     print("      ██████╗██╗███╗   ██╗███████╗ ███╗   ███╗ █████╗      ")
     print("     ██╔════╝██║████╗  ██║██╔════╝ ████╗ ████║██╔══██╗     ")
@@ -26,7 +42,6 @@ def mostrar_titulo():
     print("===============================================\n")
 
 def mostrar_menu():
-    """Muestra las opciones principales del sistema."""
     print("Bienvenido al Cinema Universitario UDEARTE\n")
     print("1. Registrar Usuario")
     print("2. Registrar Reserva")
@@ -35,23 +50,40 @@ def mostrar_menu():
     print("5. Administrador")
     print("6. Salir\n")
 
+def pausar():
+    input("\nPresiona Enter para continuar...")
 
-# =============================================
-# 🎟️  Módulo: Registrar Usuario - CINEMA UDEARTE
-# =============================================
+# ============================
+#  FUNCIÓN MOSTRAR ASIENTOS
+# ============================
+
+def mostrar_asientos():
+    print("\n       CINEMA UDEARTE  (O Disponible | X Ocupado)\n")
+    print("      ", end="")
+    for c in columnas:
+        print(f"{c:3}", end="")
+    print()
+
+    for i, fila in enumerate(filas):
+        print(f"{fila:3} ", end="")
+        for asiento in asientos[i]:
+            print(f"{asiento:3}", end="")
+        print()
+    print()
+
+
+# ============================
+#  MÓDULO: Registrar Usuario
+# ============================
 
 def registrar_usuario():
     limpiar_pantalla()
     mostrar_titulo()
     print("\n=== REGISTRO DE USUARIO ===\n")
 
-    # --- Validar nombre ---
     while True:
-        nombre = input("Ingrese el nombre: ").strip().title() # Capitaliza la primera letra
+        nombre = input("Ingrese el nombre: ").strip().title()
         errores = []
-        # Validación: Usar 're' para validar que solo haya letras y espacios si se desea
-        # if not re.match(r"^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$", nombre):
-        #    errores.append("❌ El nombre solo debe contener letras.")
         if len(nombre) < 3:
             errores.append("❌ El nombre debe tener al menos 3 letras.")
         if any(char.isdigit() for char in nombre):
@@ -61,9 +93,8 @@ def registrar_usuario():
             continue
         break
 
-    # --- Validar apellido ---
     while True:
-        apellido = input("Ingrese el apellido: ").strip().title() # Capitaliza la primera letra
+        apellido = input("Ingrese el apellido: ").strip().title()
         errores = []
         if len(apellido) < 3:
             errores.append("❌ El apellido debe tener al menos 3 letras.")
@@ -74,7 +105,6 @@ def registrar_usuario():
             continue
         break
 
-    # --- Validar documento ---
     while True:
         documento = input("Ingrese el número de documento: ").strip()
         errores = []
@@ -87,7 +117,6 @@ def registrar_usuario():
             continue
         break
 
-    # --- Seleccionar tipo de vínculo ---
     tipos_vinculo = {
         "1": ("Estudiante", 7500),
         "2": ("Docente", 10000),
@@ -98,31 +127,27 @@ def registrar_usuario():
 
     print("\nSeleccione el tipo de vínculo:")
     for clave, (tipo, valor) in tipos_vinculo.items():
-        # Formato de miles mejorado
         print(f"{clave}. {tipo.ljust(15)} → ${valor:,}") 
 
     while True:
         opcion = input("\nIngrese el número correspondiente: ").strip()
         if opcion not in tipos_vinculo:
-            print("❌ Opción no válida. Por favor, seleccione una opción del 1 al 5.\n")
+            print("❌ Opción no válida.\n")
             continue
         tipo_vinculo, valor_tiquete = tipos_vinculo[opcion]
         break
 
-    # --- Mostrar resumen del usuario registrado ---
     print("\n" + "="*40)
     print("✅ Usuario registrado exitosamente:")
-    print(f"Nombre completo   : {nombre} {apellido}")
-    print(f"Documento         : {documento}")
-    print(f"Tipo de vínculo   : {tipo_vinculo}")
+    print(f"Nombre completo   : {nombre} {apellido}")
+    print(f"Documento         : {documento}")
+    print(f"Tipo de vínculo   : {tipo_vinculo}")
     print(f"Valor del tiquete : ${valor_tiquete:,}")
     print("="*40)
-    print("\nGracias por registrarse en el Cinema UDEARTE 🎬")
 
-    time.sleep(2)
-    input("\nPresiona Enter para volver al menú principal...")
+    time.sleep(1.8)
+    pausar()
 
-    # Retorna los datos por si se desean usar en otro módulo
     return {
         "nombre": nombre,
         "apellido": apellido,
@@ -132,53 +157,160 @@ def registrar_usuario():
     }
 
 
-def pausar():
-    """Pausa la ejecución hasta que el usuario presione Enter."""
-    input("\nPresiona Enter para continuar...")
+# ============================
+# REGISTRAR RESERVA
+# ============================
+
+def registrar_reserva(usuario):
+    limpiar_pantalla()
+    mostrar_titulo()
+    print("=== REGISTRAR RESERVA ===\n")
+
+    pelicula = input("Ingrese el nombre de la película: ").strip()
+
+    mostrar_asientos()
+
+    seleccion = input("Seleccione asiento (Ej: A5): ").upper().strip()
+
+    if len(seleccion) < 2:
+        print("❌ Selección inválida.")
+        pausar()
+        return
+
+    fila = seleccion[0]
+    columna = seleccion[1:]
+
+    if fila not in filas or columna not in columnas:
+        print("❌ Asiento inexistente.")
+        pausar()
+        return
+
+    f = filas.index(fila)
+    c = columnas.index(columna)
+
+    if asientos[f][c] == "X":
+        print("❌ Ese asiento está ocupado.")
+        pausar()
+        return
+
+    asientos[f][c] = "X"
+
+    reservas.append({
+        "documento": usuario["documento"],
+        "pelicula": pelicula,
+        "fila": f,
+        "columna": c,
+        "asiento": seleccion
+    })
+
+    print("\n🎟 Reserva realizada exitosamente.")
+    pausar()
+
+
+# ============================
+# CANCELAR RESERVA
+# ============================
+
+def cancelar_reserva(usuario):
+    limpiar_pantalla()
+    mostrar_titulo()
+    print("=== CANCELAR RESERVA ===\n")
+
+    reservas_usuario = [r for r in reservas if r["documento"] == usuario["documento"]]
+
+    if not reservas_usuario:
+        print("❌ No tiene reservas activas.")
+        opcion = input("\n¿Desea hacer una reserva? (S/N): ").upper()
+        if opcion == "S":
+            registrar_reserva(usuario)
+        return
+
+    print("Estas son sus reservas activas:\n")
+    for i, r in enumerate(reservas_usuario, start=1):
+        print(f"{i}. Película: {r['pelicula']}  |  Asiento: {r['asiento']}")
+
+    while True:
+        try:
+            seleccion = int(input("\nSeleccione cuál reserva desea cancelar: "))
+            if 1 <= seleccion <= len(reservas_usuario):
+                break
+            print("❌ Número inválido.")
+        except:
+            print("❌ Ingrese un número válido.")
+
+    reserva = reservas_usuario[seleccion - 1]
+
+    confirmar = input(f"\n¿Confirmar cancelación del asiento {reserva['asiento']}? (S/N): ").upper()
+
+    if confirmar != "S":
+        print("Cancelación abortada.")
+        pausar()
+        return
+
+    f = reserva["fila"]
+    c = reserva["columna"]
+    asientos[f][c] = "O"
+
+    reservas.remove(reserva)
+
+    print("\n✔ Reserva cancelada exitosamente.")
+    pausar()
+
+
+# ============================
+# MAIN
+# ============================
 
 def main():
-    """Función principal del programa."""
-    # Declarar 'usuario' antes del bucle para que esté disponible globalmente (si se necesita)
-    usuario = None 
+    usuario = None
 
     while True:
         limpiar_pantalla()
         mostrar_titulo()
         mostrar_menu()
-        
+
         try:
             opcion = int(input("Selecciona una opción (1-6): "))
         except ValueError:
-            print("\n⚠️  Por favor ingresa un número válido (1 al 6).")
+            print("\n⚠️  Ingrese un número válido.")
             time.sleep(1.5)
             continue
 
-        # El bloque de IF/ELIF/ELSE DEBE estar aquí DENTRO del 'while True'
         if opcion == 1:
-            # No es necesario el print aquí, ya que registrar_usuario() limpia y muestra su propio título.
             usuario = registrar_usuario()
+
         elif opcion == 2:
-            print("\n👉 Opción 2: Registrar Reserva")
-            # Aquí podrías usar 'usuario' si está registrado
-            pausar()
+            if usuario:
+                registrar_reserva(usuario)
+            else:
+                print("\n⚠️  Primero debe registrar un usuario.")
+                pausar()
+
         elif opcion == 3:
-            print("\n👉 Opción 3: Cancelar Reserva")
-            pausar()
+            if usuario:
+                cancelar_reserva(usuario)
+            else:
+                print("\n⚠️  Primero debe registrar un usuario.")
+                pausar()
+
         elif opcion == 4:
-            print("\n👉 Opción 4: Consultar Funciones Fin de Semana")
+            print("\n📅 Funciones del fin de semana próximamente.")
             pausar()
+
         elif opcion == 5:
-            print("\n👉 Opción 5: Administrador")
+            print("\n🔐 Módulo administrador en construcción.")
             pausar()
+
         elif opcion == 6:
-            print("\n👋 Gracias por usar el Cinema UDEARTE. ¡Hasta pronto!")
+            print("\nGracias por usar CINEMA UDEARTE 🎬")
             time.sleep(1.5)
             limpiar_pantalla()
             sys.exit()
+
         else:
-            print("\n⚠️  Opción fuera de rango. Intenta nuevamente.")
+            print("\n⚠️ Opción fuera de rango.")
             time.sleep(1.5)
 
-# Punto de entrada del programa
+
 if __name__ == "__main__":
     main()
