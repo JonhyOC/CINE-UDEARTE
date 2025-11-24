@@ -21,6 +21,25 @@ asientos = [["O" for _ in range(11)] for _ in range(11)]
 # Lista global de reservas
 reservas = []
 
+# ============================
+# FUNCIONES DISPONIBLES
+# ============================
+funciones_fin_semana = [
+    # Interstellar (Viernes)
+    {"id": 1, "dia": "Viernes", "hora": "2pm", "pelicula": "Interstellar", "disponibles": 100},
+    {"id": 1, "dia": "Viernes", "hora": "4pm", "pelicula": "Interstellar", "disponibles": 5},
+    {"id": 1, "dia": "Viernes", "hora": "6pm", "pelicula": "Interstellar", "disponibles": 50},
+
+    # Oppenheimer (Sabado)
+    {"id": 2, "dia": "Sabado", "hora": "2pm", "pelicula": "Oppenheimer", "disponibles": 23},
+    {"id": 2, "dia": "Sabado", "hora": "4pm", "pelicula": "Oppenheimer", "disponibles": 44},
+    {"id": 2, "dia": "Sabado", "hora": "6pm", "pelicula": "Oppenheimer", "disponibles": 66},
+
+    # The Imitation Game (Domingo)
+    {"id": 3, "dia": "Domingo", "hora": "2pm", "pelicula": "The Imitation Game", "disponibles": 11},
+    {"id": 3, "dia": "Domingo", "hora": "4pm", "pelicula": "The Imitation Game", "disponibles": 0},
+    {"id": 3, "dia": "Domingo", "hora": "6pm", "pelicula": "The Imitation Game", "disponibles": 7},
+]
 
 # ============================
 # Funciones auxiliares
@@ -33,7 +52,7 @@ def mostrar_titulo():
     print("===============================================")
     print("      ██████╗██╗███╗   ██╗███████╗ ███╗   ███╗ █████╗      ")
     print("     ██╔════╝██║████╗  ██║██╔════╝ ████╗ ████║██╔══██╗     ")
-    print("     ██║     ██║██╔██╗ ██║█████╗   ██╔████╔██║███████║     ")
+    print("     ██║     ██║╔██╗ ██║█████╗   ██╔████╔██║███████║     ")
     print("     ██║     ██║██║╚██╗██║██╔══╝   ██║╚██╔╝██║██╔══██║     ")
     print("     ╚██████╗██║██║ ╚████║███████╗ ██║ ╚═╝ ██║██║  ██║     ")
     print("      ╚═════╝╚═╝╚═╝  ╚═══╝╚══════╝ ╚═╝     ╚═╝╚═╝  ╚═╝     ")
@@ -53,10 +72,6 @@ def mostrar_menu():
 def pausar():
     input("\nPresiona Enter para continuar...")
 
-# ============================
-#  FUNCIÓN MOSTRAR ASIENTOS
-# ============================
-
 def mostrar_asientos():
     print("\n       CINEMA UDEARTE  (O Disponible | X Ocupado)\n")
     print("      ", end="")
@@ -71,11 +86,22 @@ def mostrar_asientos():
         print()
     print()
 
+def imprimir_cartelera(lista):
+    print("-"*72)
+    print(f"{'No.':<4} {'IdPel':<6} {'Día':<10} {'Hora':<6} {'Película':<28} {'Disponibles':>8}")
+    print("-"*72)
+    orden_dias = {"Viernes": 1, "Sabado": 2, "Domingo": 3}
+    lista_ordenada = sorted(lista, key=lambda x: (orden_dias.get(x["dia"], 99), x["hora"], x["pelicula"]))
+    for idx, f in enumerate(lista_ordenada, start=1):
+        print(f"{idx:<4} {f['id']:<6} {f['dia']:<10} {f['hora']:<6} {f['pelicula']:<28} {f['disponibles']:>8}")
+    print("-"*72)
+
+def obtener_funciones_por_pelicula(lista_funciones, nombre_pelicula):
+    return [f for f in lista_funciones if f["pelicula"].lower() == nombre_pelicula.lower()]
 
 # ============================
-#  MÓDULO: Registrar Usuario
+# MÓDULO: Registrar Usuario
 # ============================
-
 def registrar_usuario():
     limpiar_pantalla()
     mostrar_titulo()
@@ -127,7 +153,7 @@ def registrar_usuario():
 
     print("\nSeleccione el tipo de vínculo:")
     for clave, (tipo, valor) in tipos_vinculo.items():
-        print(f"{clave}. {tipo.ljust(15)} → ${valor:,}") 
+        print(f"{clave}. {tipo.ljust(15)} → ${valor:,}")
 
     while True:
         opcion = input("\nIngrese el número correspondiente: ").strip()
@@ -145,7 +171,7 @@ def registrar_usuario():
     print(f"Valor del tiquete : ${valor_tiquete:,}")
     print("="*40)
 
-    time.sleep(1.8)
+    time.sleep(1.2)
     pausar()
 
     return {
@@ -156,18 +182,72 @@ def registrar_usuario():
         "valor_tiquete": valor_tiquete
     }
 
-
 # ============================
 # REGISTRAR RESERVA
 # ============================
-
 def registrar_reserva(usuario):
     limpiar_pantalla()
     mostrar_titulo()
     print("=== REGISTRAR RESERVA ===\n")
 
-    pelicula = input("Ingrese el nombre de la película: ").strip()
+    # Funciuones fin de semana
+    print(" CARTELERA DEL FIN DE SEMANA :\n")
+    imprimir_cartelera(funciones_fin_semana)
 
+    peliculas = sorted(list({f["pelicula"] for f in funciones_fin_semana}))
+    if not peliculas:
+        print("❌ No hay películas disponibles para este fin de semana.")
+        pausar()
+        return
+
+    print("Películas disponibles para reservar:")
+    for i, p in enumerate(peliculas, start=1):
+        print(f"{i}. {p}")
+
+    # Validar selección de película
+    while True:
+        opcion = input("\nSeleccione una película por número: ").strip()
+        if not opcion.isdigit():
+            print("❌ Ingrese un número válido.")
+            continue
+        opcion = int(opcion)
+        if not (1 <= opcion <= len(peliculas)):
+            print("❌ Número fuera de rango.")
+            continue
+        pelicula_sel = peliculas[opcion-1]
+        break
+
+    # Funciones (horarios) de la película seleccionada
+    funciones = obtener_funciones_por_pelicula(funciones_fin_semana, pelicula_sel)
+    if not funciones:
+        print(" No se encontraron funciones para esa película.")
+        pausar()
+        return
+
+    print(f"\nFunciones disponibles para '{pelicula_sel}':")
+    for i, f in enumerate(funciones, start=1):
+        print(f"{i}. {f['dia']} - {f['hora']}  |  {f['disponibles']} disponibles")
+
+    # validar selección de función
+    while True:
+        opcion_f = input("\nSeleccione una función por número: ").strip()
+        if not opcion_f.isdigit():
+            print("❌ Ingrese un número válido.")
+            continue
+        opcion_f = int(opcion_f)
+        if not (1 <= opcion_f <= len(funciones)):
+            print("❌ Número fuera de rango.")
+            continue
+        funcion_seleccionada = funciones[opcion_f - 1]
+        break
+
+    # verificar disponibilidad
+    if funcion_seleccionada["disponibles"] <= 0:
+        print("\n⚠️ No hay sillas disponibles para esta función.")
+        pausar()
+        return
+
+    print("\nMapa de asientos (O = disponible, X = ocupado):\n")
     mostrar_asientos()
 
     seleccion = input("Seleccione asiento (Ej: A5): ").upper().strip()
@@ -185,32 +265,40 @@ def registrar_reserva(usuario):
         pausar()
         return
 
-    f = filas.index(fila)
-    c = columnas.index(columna)
+    f_idx = filas.index(fila)
+    c_idx = columnas.index(columna)
 
-    if asientos[f][c] == "X":
+    if asientos[f_idx][c_idx] == "X":
         print("❌ Ese asiento está ocupado.")
         pausar()
         return
 
-    asientos[f][c] = "X"
+    asientos[f_idx][c_idx] = "X"
+    funcion_seleccionada["disponibles"] -= 1
 
-    reservas.append({
+    reserva = {
         "documento": usuario["documento"],
-        "pelicula": pelicula,
-        "fila": f,
-        "columna": c,
+        "pelicula": funcion_seleccionada["pelicula"],
+        "dia": funcion_seleccionada["dia"],
+        "hora": funcion_seleccionada["hora"],
+        "fila": f_idx,
+        "columna": c_idx,
         "asiento": seleccion
-    })
+    }
+
+    reservas.append(reserva)
 
     print("\n🎟 Reserva realizada exitosamente.")
-    pausar()
+    print(f"Pelicula: {reserva['pelicula']}")
+    print(f"Día: {reserva['dia']}  Hora: {reserva['hora']}")
+    print(f"Asiento: {reserva['asiento']}")
+    print(f"Sillas restantes en esa función: {funcion_seleccionada['disponibles']}")
 
+    pausar()
 
 # ============================
 # CANCELAR RESERVA
 # ============================
-
 def cancelar_reserva(usuario):
     limpiar_pantalla()
     mostrar_titulo()
@@ -227,7 +315,7 @@ def cancelar_reserva(usuario):
 
     print("Estas son sus reservas activas:\n")
     for i, r in enumerate(reservas_usuario, start=1):
-        print(f"{i}. Película: {r['pelicula']}  |  Asiento: {r['asiento']}")
+        print(f"{i}. Película: {r['pelicula']}  |  Asiento: {r['asiento']}  |  {r['dia']} {r['hora']}")
 
     while True:
         try:
@@ -251,11 +339,36 @@ def cancelar_reserva(usuario):
     c = reserva["columna"]
     asientos[f][c] = "O"
 
+    for func in funciones_fin_semana:
+        if (func["pelicula"].lower() == reserva["pelicula"].lower()
+                and func["dia"] == reserva["dia"]
+                and func["hora"] == reserva["hora"]):
+            func["disponibles"] += 1
+            break
+
     reservas.remove(reserva)
 
     print("\n✔ Reserva cancelada exitosamente.")
     pausar()
 
+# ============================
+# CONSULTAR FUNCIONES PROXIMO FIN DE SEMANA
+# FUNCIONES PRÓXIMO FIN DE SEMANA
+# ============================
+
+funciones_proximo = [
+    {"id": 4, "dia": "Viernes", "hora": "1pm", "pelicula": "Dune", "disponibles": 80},
+    {"id": 4, "dia": "Viernes", "hora": "4pm", "pelicula": "Dune", "disponibles": 60},
+    {"id": 4, "dia": "Viernes", "hora": "7pm", "pelicula": "Dune", "disponibles": 40},
+
+    {"id": 5, "dia": "Sabado", "hora": "3pm", "pelicula": "Whiplash", "disponibles": 50},
+    {"id": 5, "dia": "Sabado", "hora": "5pm", "pelicula": "Whiplash", "disponibles": 45},
+    {"id": 5, "dia": "Sabado", "hora": "9pm", "pelicula": "Whiplash", "disponibles": 30},
+
+    {"id": 6, "dia": "Domingo", "hora": "12pm", "pelicula": "Parasite", "disponibles": 70},
+    {"id": 6, "dia": "Domingo", "hora": "3pm", "pelicula": "Parasite", "disponibles": 55},
+    {"id": 6, "dia": "Domingo", "hora": "8pm", "pelicula": "Parasite", "disponibles": 20},
+]
 
 # ============================
 # MAIN
@@ -294,7 +407,8 @@ def main():
                 pausar()
 
         elif opcion == 4:
-            print("\n📅 Funciones del fin de semana próximamente.")
+            print("\n FUNCIONES - PRÓXIMO FIN DE SEMANA \n")
+            imprimir_cartelera(funciones_proximo)
             pausar()
 
         elif opcion == 5:
@@ -302,7 +416,7 @@ def main():
             pausar()
 
         elif opcion == 6:
-            print("\nGracias por usar CINEMA UDEARTE 🎬")
+            print("\n Gracias por usar CINEMA UDEARTE 🎬")
             time.sleep(1.5)
             limpiar_pantalla()
             sys.exit()
@@ -310,7 +424,6 @@ def main():
         else:
             print("\n⚠️ Opción fuera de rango.")
             time.sleep(1.5)
-
 
 if __name__ == "__main__":
     main()
