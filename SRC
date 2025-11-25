@@ -15,30 +15,52 @@ import re
 filas = ["A","B","C","D","E","F","G","H","I","J","K"]
 columnas = ["1","2","3","4","5","6","7","8","9","10","11"]
 
-# 11 filas x 11 columnas llenas de "O"
 asientos = [["O" for _ in range(11)] for _ in range(11)]
 
-# Lista global de reservas
+# Listas globales
 reservas = []
+usuarios_registrados = []
 
 # ============================
-# FUNCIONES DISPONIBLES
+# ADMINISTRADORES VALIDOS
 # ============================
+admin_credenciales = {
+    "admin1": "1234",
+    "jonhy": "2025",
+    "root": "admin"
+}
+
+# ============================
+# FUNCIONES FIN DE SEMANA
+# ============================
+
 funciones_fin_semana = [
-    # Interstellar (Viernes)
     {"id": 1, "dia": "Viernes", "hora": "2pm", "pelicula": "Interstellar", "disponibles": 100},
     {"id": 1, "dia": "Viernes", "hora": "4pm", "pelicula": "Interstellar", "disponibles": 5},
     {"id": 1, "dia": "Viernes", "hora": "6pm", "pelicula": "Interstellar", "disponibles": 50},
 
-    # Oppenheimer (Sabado)
     {"id": 2, "dia": "Sabado", "hora": "2pm", "pelicula": "Oppenheimer", "disponibles": 23},
     {"id": 2, "dia": "Sabado", "hora": "4pm", "pelicula": "Oppenheimer", "disponibles": 44},
     {"id": 2, "dia": "Sabado", "hora": "6pm", "pelicula": "Oppenheimer", "disponibles": 66},
 
-    # The Imitation Game (Domingo)
     {"id": 3, "dia": "Domingo", "hora": "2pm", "pelicula": "The Imitation Game", "disponibles": 11},
     {"id": 3, "dia": "Domingo", "hora": "4pm", "pelicula": "The Imitation Game", "disponibles": 0},
     {"id": 3, "dia": "Domingo", "hora": "6pm", "pelicula": "The Imitation Game", "disponibles": 7},
+]
+
+# FUNCIONES PROXIMO FIN DE SEMANA
+funciones_proximo = [
+    {"id": 4, "dia": "Viernes", "hora": "1pm", "pelicula": "Dune", "disponibles": 80},
+    {"id": 4, "dia": "Viernes", "hora": "4pm", "pelicula": "Dune", "disponibles": 60},
+    {"id": 4, "dia": "Viernes", "hora": "7pm", "pelicula": "Dune", "disponibles": 40},
+
+    {"id": 5, "dia": "Sabado", "hora": "3pm", "pelicula": "Whiplash", "disponibles": 50},
+    {"id": 5, "dia": "Sabado", "hora": "5pm", "pelicula": "Whiplash", "disponibles": 45},
+    {"id": 5, "dia": "Sabado", "hora": "9pm", "pelicula": "Whiplash", "disponibles": 30},
+
+    {"id": 6, "dia": "Domingo", "hora": "12pm", "pelicula": "Parasite", "disponibles": 70},
+    {"id": 6, "dia": "Domingo", "hora": "3pm", "pelicula": "Parasite", "disponibles": 55},
+    {"id": 6, "dia": "Domingo", "hora": "8pm", "pelicula": "Parasite", "disponibles": 20},
 ]
 
 # ============================
@@ -99,9 +121,11 @@ def imprimir_cartelera(lista):
 def obtener_funciones_por_pelicula(lista_funciones, nombre_pelicula):
     return [f for f in lista_funciones if f["pelicula"].lower() == nombre_pelicula.lower()]
 
+
 # ============================
-# MÓDULO: Registrar Usuario
+# REGISTRAR USUARIO
 # ============================
+
 def registrar_usuario():
     limpiar_pantalla()
     mostrar_titulo()
@@ -109,37 +133,22 @@ def registrar_usuario():
 
     while True:
         nombre = input("Ingrese el nombre: ").strip().title()
-        errores = []
-        if len(nombre) < 3:
-            errores.append("❌ El nombre debe tener al menos 3 letras.")
-        if any(char.isdigit() for char in nombre):
-            errores.append("❌ El nombre no puede contener números.")
-        if errores:
-            print("\n".join(errores), "\nIntente de nuevo.\n")
+        if len(nombre) < 3 or any(char.isdigit() for char in nombre):
+            print("❌ Nombre inválido.\n")
             continue
         break
 
     while True:
         apellido = input("Ingrese el apellido: ").strip().title()
-        errores = []
-        if len(apellido) < 3:
-            errores.append("❌ El apellido debe tener al menos 3 letras.")
-        if any(char.isdigit() for char in apellido):
-            errores.append("❌ El apellido no puede contener números.")
-        if errores:
-            print("\n".join(errores), "\nIntente de nuevo.\n")
+        if len(apellido) < 3 or any(char.isdigit() for char in apellido):
+            print("❌ Apellido inválido.\n")
             continue
         break
 
     while True:
         documento = input("Ingrese el número de documento: ").strip()
-        errores = []
         if not documento.isdigit():
-            errores.append("❌ El documento solo debe contener números.")
-        if len(documento) < 3 or len(documento) > 15:
-            errores.append("❌ El documento debe tener entre 3 y 15 dígitos.")
-        if errores:
-            print("\n".join(errores), "\nIntente de nuevo.\n")
+            print("❌ El documento debe ser numérico.\n")
             continue
         break
 
@@ -152,223 +161,233 @@ def registrar_usuario():
     }
 
     print("\nSeleccione el tipo de vínculo:")
-    for clave, (tipo, valor) in tipos_vinculo.items():
-        print(f"{clave}. {tipo.ljust(15)} → ${valor:,}")
+    for k, v in tipos_vinculo.items():
+        print(f"{k}. {v[0]} → ${v[1]:,}")
 
     while True:
-        opcion = input("\nIngrese el número correspondiente: ").strip()
+        opcion = input("\nIngrese una opción: ").strip()
         if opcion not in tipos_vinculo:
-            print("❌ Opción no válida.\n")
+            print("❌ Opción inválida.")
             continue
-        tipo_vinculo, valor_tiquete = tipos_vinculo[opcion]
+        vinculo, valor = tipos_vinculo[opcion]
         break
 
-    print("\n" + "="*40)
-    print("✅ Usuario registrado exitosamente:")
-    print(f"Nombre completo   : {nombre} {apellido}")
-    print(f"Documento         : {documento}")
-    print(f"Tipo de vínculo   : {tipo_vinculo}")
-    print(f"Valor del tiquete : ${valor_tiquete:,}")
-    print("="*40)
-
-    time.sleep(1.2)
-    pausar()
-
-    return {
+    usuario = {
         "nombre": nombre,
         "apellido": apellido,
         "documento": documento,
-        "vinculo": tipo_vinculo,
-        "valor_tiquete": valor_tiquete
+        "vinculo": vinculo,
+        "valor_tiquete": valor
     }
+
+    usuarios_registrados.append(usuario)
+
+    print("\nUsuario registrado con éxito.")
+    pausar()
+    return usuario
 
 # ============================
 # REGISTRAR RESERVA
 # ============================
+
 def registrar_reserva(usuario):
     limpiar_pantalla()
     mostrar_titulo()
     print("=== REGISTRAR RESERVA ===\n")
 
-    # Funciuones fin de semana
-    print(" CARTELERA DEL FIN DE SEMANA :\n")
     imprimir_cartelera(funciones_fin_semana)
-
     peliculas = sorted(list({f["pelicula"] for f in funciones_fin_semana}))
-    if not peliculas:
-        print("❌ No hay películas disponibles para este fin de semana.")
-        pausar()
-        return
 
-    print("Películas disponibles para reservar:")
-    for i, p in enumerate(peliculas, start=1):
+    print("\nPelículas disponibles:")
+    for i, p in enumerate(peliculas, 1):
         print(f"{i}. {p}")
 
-    # Validar selección de película
     while True:
-        opcion = input("\nSeleccione una película por número: ").strip()
-        if not opcion.isdigit():
-            print("❌ Ingrese un número válido.")
-            continue
-        opcion = int(opcion)
-        if not (1 <= opcion <= len(peliculas)):
-            print("❌ Número fuera de rango.")
-            continue
-        pelicula_sel = peliculas[opcion-1]
-        break
+        opcion = input("\nSeleccione película: ")
+        if opcion.isdigit() and 1 <= int(opcion) <= len(peliculas):
+            pelicula_sel = peliculas[int(opcion)-1]
+            break
 
-    # Funciones (horarios) de la película seleccionada
     funciones = obtener_funciones_por_pelicula(funciones_fin_semana, pelicula_sel)
-    if not funciones:
-        print(" No se encontraron funciones para esa película.")
-        pausar()
-        return
 
-    print(f"\nFunciones disponibles para '{pelicula_sel}':")
-    for i, f in enumerate(funciones, start=1):
-        print(f"{i}. {f['dia']} - {f['hora']}  |  {f['disponibles']} disponibles")
+    print(f"\nFunciones para {pelicula_sel}:")
+    for i, f in enumerate(funciones, 1):
+        print(f"{i}. {f['dia']} {f['hora']} | {f['disponibles']} disponibles")
 
-    # validar selección de función
     while True:
-        opcion_f = input("\nSeleccione una función por número: ").strip()
-        if not opcion_f.isdigit():
-            print("❌ Ingrese un número válido.")
-            continue
-        opcion_f = int(opcion_f)
-        if not (1 <= opcion_f <= len(funciones)):
-            print("❌ Número fuera de rango.")
-            continue
-        funcion_seleccionada = funciones[opcion_f - 1]
-        break
+        opcion_f = input("\nSeleccione función: ")
+        if opcion_f.isdigit() and 1 <= int(opcion_f) <= len(funciones):
+            funcion_sel = funciones[int(opcion_f)-1]
+            break
 
-    # verificar disponibilidad
-    if funcion_seleccionada["disponibles"] <= 0:
-        print("\n⚠️ No hay sillas disponibles para esta función.")
+    if funcion_sel["disponibles"] <= 0:
+        print("❌ No hay sillas disponibles.")
         pausar()
         return
 
-    print("\nMapa de asientos (O = disponible, X = ocupado):\n")
     mostrar_asientos()
-
-    seleccion = input("Seleccione asiento (Ej: A5): ").upper().strip()
-
-    if len(seleccion) < 2:
-        print("❌ Selección inválida.")
-        pausar()
-        return
-
+    seleccion = input("Seleccione asiento (Ej: B5): ").upper().strip()
     fila = seleccion[0]
-    columna = seleccion[1:]
+    col = seleccion[1:]
 
-    if fila not in filas or columna not in columnas:
+    if fila not in filas or col not in columnas:
         print("❌ Asiento inexistente.")
         pausar()
         return
 
     f_idx = filas.index(fila)
-    c_idx = columnas.index(columna)
+    c_idx = columnas.index(col)
 
     if asientos[f_idx][c_idx] == "X":
-        print("❌ Ese asiento está ocupado.")
+        print("❌ Asiento ocupado.")
         pausar()
         return
 
     asientos[f_idx][c_idx] = "X"
-    funcion_seleccionada["disponibles"] -= 1
+    funcion_sel["disponibles"] -= 1
 
     reserva = {
         "documento": usuario["documento"],
-        "pelicula": funcion_seleccionada["pelicula"],
-        "dia": funcion_seleccionada["dia"],
-        "hora": funcion_seleccionada["hora"],
+        "pelicula": funcion_sel["pelicula"],
+        "dia": funcion_sel["dia"],
+        "hora": funcion_sel["hora"],
+        "asiento": seleccion,
         "fila": f_idx,
         "columna": c_idx,
-        "asiento": seleccion
+        "pago": usuario["valor_tiquete"]
     }
 
     reservas.append(reserva)
 
-    print("\n🎟 Reserva realizada exitosamente.")
-    print(f"Pelicula: {reserva['pelicula']}")
-    print(f"Día: {reserva['dia']}  Hora: {reserva['hora']}")
-    print(f"Asiento: {reserva['asiento']}")
-    print(f"Sillas restantes en esa función: {funcion_seleccionada['disponibles']}")
-
+    print("\nReserva completada.")
     pausar()
 
 # ============================
 # CANCELAR RESERVA
 # ============================
+
 def cancelar_reserva(usuario):
     limpiar_pantalla()
     mostrar_titulo()
     print("=== CANCELAR RESERVA ===\n")
 
-    reservas_usuario = [r for r in reservas if r["documento"] == usuario["documento"]]
+    res_user = [r for r in reservas if r["documento"] == usuario["documento"]]
 
-    if not reservas_usuario:
-        print("❌ No tiene reservas activas.")
-        opcion = input("\n¿Desea hacer una reserva? (S/N): ").upper()
-        if opcion == "S":
-            registrar_reserva(usuario)
-        return
-
-    print("Estas son sus reservas activas:\n")
-    for i, r in enumerate(reservas_usuario, start=1):
-        print(f"{i}. Película: {r['pelicula']}  |  Asiento: {r['asiento']}  |  {r['dia']} {r['hora']}")
-
-    while True:
-        try:
-            seleccion = int(input("\nSeleccione cuál reserva desea cancelar: "))
-            if 1 <= seleccion <= len(reservas_usuario):
-                break
-            print("❌ Número inválido.")
-        except:
-            print("❌ Ingrese un número válido.")
-
-    reserva = reservas_usuario[seleccion - 1]
-
-    confirmar = input(f"\n¿Confirmar cancelación del asiento {reserva['asiento']}? (S/N): ").upper()
-
-    if confirmar != "S":
-        print("Cancelación abortada.")
+    if not res_user:
+        print("No tiene reservas.")
         pausar()
         return
 
-    f = reserva["fila"]
-    c = reserva["columna"]
+    print("Sus reservas:")
+    for i, r in enumerate(res_user, 1):
+        print(f"{i}. {r['pelicula']} | {r['dia']} {r['hora']} | {r['asiento']}")
+
+    while True:
+        sel = input("\nSeleccione una reserva: ")
+        if sel.isdigit() and 1 <= int(sel) <= len(res_user):
+            reserva = res_user[int(sel)-1]
+            break
+
+    f, c = reserva["fila"], reserva["columna"]
     asientos[f][c] = "O"
 
-    for func in funciones_fin_semana:
-        if (func["pelicula"].lower() == reserva["pelicula"].lower()
-                and func["dia"] == reserva["dia"]
-                and func["hora"] == reserva["hora"]):
-            func["disponibles"] += 1
-            break
+    for f in funciones_fin_semana:
+        if f["pelicula"] == reserva["pelicula"] and f["dia"] == reserva["dia"] and f["hora"] == reserva["hora"]:
+            f["disponibles"] += 1
 
     reservas.remove(reserva)
 
-    print("\n✔ Reserva cancelada exitosamente.")
+    print("Reserva cancelada.")
     pausar()
 
 # ============================
-# CONSULTAR FUNCIONES PROXIMO FIN DE SEMANA
-# FUNCIONES PRÓXIMO FIN DE SEMANA
+# MODULO ADMINISTRADOR
 # ============================
 
-funciones_proximo = [
-    {"id": 4, "dia": "Viernes", "hora": "1pm", "pelicula": "Dune", "disponibles": 80},
-    {"id": 4, "dia": "Viernes", "hora": "4pm", "pelicula": "Dune", "disponibles": 60},
-    {"id": 4, "dia": "Viernes", "hora": "7pm", "pelicula": "Dune", "disponibles": 40},
+def admin_login():
+    limpiar_pantalla()
+    mostrar_titulo()
+    print("=== ACCESO ADMINISTRADOR ===\n")
 
-    {"id": 5, "dia": "Sabado", "hora": "3pm", "pelicula": "Whiplash", "disponibles": 50},
-    {"id": 5, "dia": "Sabado", "hora": "5pm", "pelicula": "Whiplash", "disponibles": 45},
-    {"id": 5, "dia": "Sabado", "hora": "9pm", "pelicula": "Whiplash", "disponibles": 30},
+    usuario = input("Usuario: ").strip()
+    clave = input("Contraseña: ").strip()
 
-    {"id": 6, "dia": "Domingo", "hora": "12pm", "pelicula": "Parasite", "disponibles": 70},
-    {"id": 6, "dia": "Domingo", "hora": "3pm", "pelicula": "Parasite", "disponibles": 55},
-    {"id": 6, "dia": "Domingo", "hora": "8pm", "pelicula": "Parasite", "disponibles": 20},
-]
+    if usuario in admin_credenciales and admin_credenciales[usuario] == clave:
+        print("\n✔ Acceso concedido.")
+        time.sleep(1)
+        admin_menu()
+    else:
+        print("\n❌ Credenciales incorrectas.")
+        pausar()
+
+
+def admin_menu():
+    while True:
+        limpiar_pantalla()
+        mostrar_titulo()
+        print("=== MENÚ ADMINISTRADOR ===\n")
+        print("1. Total de reservas registradas")
+        print("2. Total de tiquetes vendidos")
+        print("3. Total de reservas realizadas")
+        print("4. Total pago realizado")
+        print("5. Promedio por venta diario")
+        print("6. Lista de usuarios")
+        print("7. Usuario con más y menos reservas")
+        print("8. Salir\n")
+
+        opcion = input("Seleccione una opción: ")
+
+        if opcion == "1":
+            print("\nTotal reservas registradas:", len(reservas))
+            pausar()
+
+        elif opcion == "2":
+            print("\nTiquetes vendidos:", len(reservas))
+            pausar()
+
+        elif opcion == "3":
+            print("\nTotal reservas realizadas:", len(reservas))
+            pausar()
+
+        elif opcion == "4":
+            total_pago = sum(r["pago"] for r in reservas)
+            print("\nTotal pago recibido: $", total_pago)
+            pausar()
+
+        elif opcion == "5":
+            dias = 3
+            total = sum(r["pago"] for r in reservas)
+            print("\nPromedio de venta diario: $", round(total/dias, 2))
+            pausar()
+
+        elif opcion == "6":
+            print("\nUsuarios registrados:")
+            for u in usuarios_registrados:
+                print(f"- {u['nombre']} {u['apellido']} ({u['documento']})")
+            pausar()
+
+        elif opcion == "7":
+            if not reservas:
+                print("No hay reservas.")
+                pausar()
+                continue
+
+            conteo = {}
+            for r in reservas:
+                conteo[r["documento"]] = conteo.get(r["documento"], 0) + 1
+
+            max_doc = max(conteo, key=conteo.get)
+            min_doc = min(conteo, key=conteo.get)
+
+            u_max = next(u for u in usuarios_registrados if u["documento"] == max_doc)
+            u_min = next(u for u in usuarios_registrados if u["documento"] == min_doc)
+
+            print("\nUsuario con MÁS reservas:", u_max["nombre"], u_max["apellido"], "-", conteo[max_doc])
+            print("Usuario con MENOS reservas:", u_min["nombre"], u_min["apellido"], "-", conteo[min_doc])
+            pausar()
+
+        elif opcion == "8":
+            break
 
 # ============================
 # MAIN
@@ -382,48 +401,35 @@ def main():
         mostrar_titulo()
         mostrar_menu()
 
-        try:
-            opcion = int(input("Selecciona una opción (1-6): "))
-        except ValueError:
-            print("\n⚠️  Ingrese un número válido.")
-            time.sleep(1.5)
-            continue
+        opcion = input("Seleccione una opción: ")
 
-        if opcion == 1:
+        if opcion == "1":
             usuario = registrar_usuario()
 
-        elif opcion == 2:
+        elif opcion == "2":
             if usuario:
                 registrar_reserva(usuario)
             else:
-                print("\n⚠️  Primero debe registrar un usuario.")
+                print("Debe registrar usuario.")
                 pausar()
 
-        elif opcion == 3:
+        elif opcion == "3":
             if usuario:
                 cancelar_reserva(usuario)
             else:
-                print("\n⚠️  Primero debe registrar un usuario.")
+                print("Debe registrar usuario.")
                 pausar()
 
-        elif opcion == 4:
-            print("\n FUNCIONES - PRÓXIMO FIN DE SEMANA \n")
+        elif opcion == "4":
             imprimir_cartelera(funciones_proximo)
             pausar()
 
-        elif opcion == 5:
-            print("\n🔐 Módulo administrador en construcción.")
-            pausar()
+        elif opcion == "5":
+            admin_login()
 
-        elif opcion == 6:
-            print("\n Gracias por usar CINEMA UDEARTE 🎬")
-            time.sleep(1.5)
-            limpiar_pantalla()
-            sys.exit()
-
-        else:
-            print("\n⚠️ Opción fuera de rango.")
-            time.sleep(1.5)
+        elif opcion == "6":
+            print("\nGracias por usar CINEMA UDEARTE 🎬")
+            break
 
 if __name__ == "__main__":
     main()
