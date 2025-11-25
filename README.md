@@ -217,6 +217,8 @@ Cada actualización del proyecto seguirá una estructura clara para mantener el 
 | v2.1.0 | 11/11/2025 | Actualizacion de los requisitos funcionales del programa | Nicoll Pamela Rosero Enriquez |
 | v2.2.0 | 12/11/2025 | Actualizacion del codigo  | Mariam Pertuz Otero |
 | v2.3.0 | 24/11/2025 | Actualizacion del codigo  | Jonhy Ochoa Correa |
+| v2.4.0 | 24/11/2025 | Actualizacion del codigo  | Nicoll Pamela Rosero Enriquez |
+| v2.5.0 | 24/11/2025 | Actualizacion del codigo  | Jonhy Ochoa Correa |
 
 
 📌 *El objetivo de este plan es garantizar que cada cambio quede documentado y sea fácilmente reversible si es necesario.*
@@ -310,6 +312,7 @@ K ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 ### v2.0.0 Creación y actualización del código.
 
     En ésta parte se empieza la implementacion del código que busca inicialmente capturar los datos del ususario. En las          siguientes versiones el código será mas funcional dando la opcion al usuario de poder escoger su película favorita,           asiento, fecha y hora en la que desea ver la función.
+    
 
 ### v2.1.0 Actualización de requisitos funcionales del programa.
 
@@ -318,6 +321,7 @@ K ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
    -Verificar la existencia de un usuario antes de crear o cancelar reservas.
    -Menús claros y ordenados para elegir entre registrar usuario, ver películas, reservar, cancelar, pagar o consultar            información.
    -Mostrar el nombre del usuario, tipo de usuario, silla reservada y valor a pagar.
+   
 
 ### v2.2.0 Actualización del codigo. 
 
@@ -327,6 +331,16 @@ K ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 ### v2.3.0 Actualización del codigo. 
 
     Con ésta nueva actualización ahora el código es más funcional, permitiendo al usuario cancelar las reservas hechas hasta      el momento sin perder su registro.
+    
 
+### v2.4.0 Actualización del codigo. 
 
+    Con la actualización hecha en éste punto ahora es posible acceder al listado de películas disponibles junto con los           horarios y la cantidad de sillas disponibles. Las opciones de películas son variadas y la cantidad de asientos                disponibles es bastante amplia gracias a su matriz de selección.
+    
 
+### v2.5.0 Actualización del codigo.
+
+    La actualización hecha hasta ahora permite una funcionabilidad casi completa donde se registran todos los procedimientos      hechos por el ó los usuarios. También se añade la función de administrador que permite a los usuarios registrados con         nombre y contraseña poder acceder a los detalles de registro con toda la información necesaria para hacer um informe          completo.
+   
+
+ 
