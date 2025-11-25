@@ -1,5 +1,5 @@
 # =============================================
-# 🎬 CINEMA UDEARTE - MENÚ PRINCIPAL
+#     🎬 CINEMA UDEARTE - MENÚ PRINCIPAL
 # Proyecto Universitario de Gestión de Cinema
 # =============================================
 
@@ -9,7 +9,7 @@ import time
 import re
 
 # ============================
-#  MATRIZ DE ASIENTOS
+#     MATRIZ DE ASIENTOS
 # ============================
 
 filas = ["A","B","C","D","E","F","G","H","I","J","K"]
@@ -22,7 +22,7 @@ reservas = []
 usuarios_registrados = []
 
 # ============================
-# ADMINISTRADORES VALIDOS
+#   ADMINISTRADORES VALIDOS
 # ============================
 admin_credenciales = {
     "admin1": "1234",
@@ -31,7 +31,7 @@ admin_credenciales = {
 }
 
 # ============================
-# FUNCIONES FIN DE SEMANA
+#   FUNCIONES FIN DE SEMANA
 # ============================
 
 funciones_fin_semana = [
@@ -64,7 +64,7 @@ funciones_proximo = [
 ]
 
 # ============================
-# Funciones auxiliares
+#    Funciones auxiliares
 # ============================
 
 def limpiar_pantalla():
@@ -79,7 +79,7 @@ def mostrar_titulo():
     print("     ╚██████╗██║██║ ╚████║███████╗ ██║ ╚═╝ ██║██║  ██║     ")
     print("      ╚═════╝╚═╝╚═╝  ╚═══╝╚══════╝ ╚═╝     ╚═╝╚═╝  ╚═╝     ")
     print("===============================================")
-    print("       CINEMA UNIVERSITARIO UDEARTE      ")
+    print("        CINEMA UNIVERSITARIO UDEARTE      ")
     print("===============================================\n")
 
 def mostrar_menu():
@@ -123,7 +123,7 @@ def obtener_funciones_por_pelicula(lista_funciones, nombre_pelicula):
 
 
 # ============================
-# REGISTRAR USUARIO
+#     REGISTRAR USUARIO
 # ============================
 
 def registrar_usuario():
@@ -187,7 +187,7 @@ def registrar_usuario():
     return usuario
 
 # ============================
-# REGISTRAR RESERVA
+#     REGISTRAR RESERVA
 # ============================
 
 def registrar_reserva(usuario):
@@ -263,7 +263,7 @@ def registrar_reserva(usuario):
     pausar()
 
 # ============================
-# CANCELAR RESERVA
+#      CANCELAR RESERVA
 # ============================
 
 def cancelar_reserva(usuario):
@@ -301,7 +301,7 @@ def cancelar_reserva(usuario):
     pausar()
 
 # ============================
-# MODULO ADMINISTRADOR
+#    MODULO ADMINISTRADOR
 # ============================
 
 def admin_login():
@@ -390,7 +390,7 @@ def admin_menu():
             break
 
 # ============================
-# MAIN
+#          MAIN
 # ============================
 
 def main():
