@@ -19,7 +19,8 @@
 | 7 | 12/11/2025 | 10:30 AM |  Virtual | Actualización y asignación de tarea | Se comparte lo trabajado hasta el momento y se asigna una parte de la codificación a cada uno de los integrantes | Mariam Pertuz, Jonhy Ochoa, Josuar Loaiza, Nicoll Rosero | 24/11/25 | 
 | 8 | 24/11/2025 | 6:30 AM |  Virtual | Actualización de código | Se hace las actualizacion correspondiente del código para que sea mas funcional| Jonhy Ochoa | 24/11/25 | 
 | 9 | 24/11/2025 | 2:00 PM |  Virtual | Actualización de código | Se hace las actualizacion correspondiente del código para que sea mas funcional| Nicoll Rosero | 25/11/25 | 
-| 8 | 25/11/2025 | 6:30 AM |  Virtual | Actualización de código | Se hace las actualizacion correspondiente del código para que sea mas funcional| Jonhy Ochoa | Pendiente | 
+| 10 | 25/11/2025 | 6:30 AM |  Virtual | Actualización de código | Se hace las actualizacion correspondiente del código para que sea mas funcional| Jonhy Ochoa | 26/11/25 | 
+| 11 | 25/11/2025 | 11:30 AM |  Virtual | Socialización Manual del Usuario  | Se hace la revisión del manual de usuario para hacer los ajustes necesarios y posteriormente montarlo a la plataforma | Jonhy Ochoa, Mariam Pertuz | Final de las reuniones | 
 ---
 
 ## 📝 Observaciones Generales  
