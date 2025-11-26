@@ -1,1 +1,134 @@
 MANUAL DE USUARIO – CINE UDEARTE 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+En este manual podrás encontrar el paso a paso detallado que debes seguir para poder usar nuestro programa. 
+
+*INICIO DEL PROGRAMA* 
+Al abrir el programa aparece el menú principal con estas opciones: 
+
+1. Registrar Usuario 
+2. Registrar Reserva 
+3. Cancelar Reserva 
+4. Consultar Funciones Fin de Semana 
+5. Administrador 
+6. Salir 
+
+El usuario debe escribir el número de la opción que desea usar ingresando el número de la opción y presionar Enter. 
+
+*REGISTRAR UN USUARIO (OPCIÓN 1)* 
+Antes de hacer cualquier reserva es obligatorio registrarse. 
+El sistema te pedirá: 
+
+- Nombre (mínimo 3 letras, sin números) 
+- Apellido (mínimo 3 letras, sin números) 
+- Número de documento (solo números) 
+
+Debes seguir estas indicaciones, sino no vas a poder continuar. 
+Luego se debe elegir el tipo de vínculo con la universidad. Aparecerán las siguientes opciones: 
+
+1. Estudiante → $7.500 
+2. Docente → $10.000 
+4. Administrativo → $8.500 
+5. Oficial interno → $7.000 
+6. Público externo → $15.000 
+
+Se escribe solo el número de la opción. 
+ Al finalizar, si los datos ingresados están correctos el sistema confirmará: 
+ "Usuario registrado con éxito". 
+Después de registrar el usuario, ya podrá reservar o cancelar reservas. 
+
+*REGISTRAR UNA RESERVA (OPCIÓN 2)*
+Importante, solo se puede hacer una reserva si ya se registró un usuario previamente. 
+Pasos: 
+
+1.Seleccionar "2" en el menú principal. 
+2. El sistema mostrará la cartelera del fin de semana con las películas, los cupos y los días y horarios disponibles. 
+3. Debes elegir la película escribiendo el número que la acompaña. 
+4. Luego se mostrarán las funciones disponibles (día, hora y cupos). 
+5. Elegir la función deseada. 
+6. El sistema mostrará un mapa de asientos donde: 
+   - O significa asiento disponible 
+  - X significa asiento ocupado 
+
+7. El programa pedirá escribir un asiento, por ejemplo: A1, B5, C7, J10. 
+8. Si el asiento está disponible, se confirma la reserva. 
+
+Al finalizar se mostrará: 
+ "Reserva completada". 
+
+*CANCELAR UNA RESERVA (OPCIÓN 3)* 
+Esta opción solo cancela reservas del documento del usuario que está registrado. 
+Pasos: 
+
+1. Seleccionar "3" en el menú principal. 
+2. El sistema mostrará el listado de todas las reservas del usuario 
+3. Escriba el número de la reserva que quiere cancelar. 
+4. El sistema devolverá el asiento a disponible y eliminará la reserva. 
+
+Mensaje final: 
+ "Reserva cancelada". 
+
+*VER LA CARTELERA DEL PRÓXIMO FIN DE SEMANA (OPCIÓN 4)*
+
+Esta opción solo muestra información de las películas que vienen. 
+ No hace reservas y no pide datos. 
+ El usuario solo observa la información y presiona Enter para volver al menú. 
+
+*ACCESO AL ADMINISTRADOR (OPCIÓN 5)*
+
+Esta opción es solo para personal autorizado. 
+
+Pasos: 
+
+Seleccionar la opción "5". 
+
+Escribir usuario y contraseña. 
+ Ejemplos de usuarios válidos: admin1, jonhy, root. 
+ Cada uno tiene una clave específica. 
+
+Si las credenciales son correctas, el sistema muestra el menú administrativo. 
+
+EL MENÚ DEL ADMINISTRADOR: 
+
+El administrador puede consultar: 
+
+Total de reservas registradas 
+
+Total de tiquetes vendidos 
+
+Total de reservas realizadas 
+
+Total pago recibido 
+
+Promedio de venta por día 
+
+Lista de usuarios registrados 
+
+Usuario con más y menos reservas 
+
+Salir del módulo 
+
+El administrador no puede editar reservas, solo consultar información. 
+
+ 
+
+SALIR DEL PROGRAMA (OPCIÓN 6) 
+
+Desde el menú principal se elige la opción "6". 
+ El sistema muestra un mensaje de despedida y termina la ejecución. 
