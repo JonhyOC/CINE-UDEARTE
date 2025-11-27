@@ -132,7 +132,7 @@ El administrador puede consultar:
 
 Desde el menú principal se elige la opción **"6"**.  
 
-
+El sistema muestra un mensaje de despedida y finaliza la ejecución.
 
 El sistema muestra un mensaje de despedida y finaliza la ejecución.
 ---
