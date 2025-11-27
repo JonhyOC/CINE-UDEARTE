@@ -68,9 +68,18 @@ funciones_proximo = [
 # ============================
 
 def limpiar_pantalla():
+    """ 
+    Sirve para limpiar la pantalla del programa
+    """
+    
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def mostrar_titulo():
+    """ 
+    Imprime el título grande del cine Udearte. Es solo decorativo para mostrar 
+    el encabezado del sistema cada vez que se abre una sección.
+    """
+    
     print     ("===============================================")
     print("      ██████╗██╗███╗   ██╗███████╗ ███╗   ███╗ █████╗      ")
     print("     ██╔════╝██║████╗  ██║██╔════╝ ████╗ ████║██╔══██╗     ")
@@ -83,18 +92,33 @@ def mostrar_titulo():
     print    ("===============================================\n")
 
 def mostrar_menu():
-    print("Bienvenido al Cinema Universitario UDEARTE\n")
-    print("1. Registrar Usuario")
-    print("2. Registrar Reserva")
-    print("3. Cancelar Reserva")
-    print("4. Consultar Funciones Fin de Semana")
-    print("5. Administrador")
-    print("6. Salir\n")
+   """ 
+   Muestra las opciones principales del menú para que el usuario pueda elegir 
+   qué hacer: registrar usuario, reservar, cancelar, etc.
+   """
+   print("Bienvenido al Cinema Universitario UDEARTE\n")
+   print("1. Registrar Usuario")
+   print("2. Registrar Reserva")
+   print("3. Cancelar Reserva")
+   print("4. Consultar Funciones Fin de Semana")
+   print("5. Administrador")
+   print("6. Salir\n")
 
 def pausar():
-    input("\nPresiona Enter para continuar...")
+   """ 
+   Detiene el programa hasta que el usuario presione Enter.Se usa para que el
+   usuario alcance a leer la información antes de que la pantalla se limpie.
+   """
+   
+   input("\nPresiona Enter para continuar...")
 
 def mostrar_asientos():
+    """"
+    Muestra en pantalla la matriz de asientos del cine. Muestra filas A–K y 
+    columnas 1–11, con O si está disponible y X si está ocupado.
+    Sirve para que el usuario elija dónde quiere sentarse.
+    """
+    
     print("\n       CINEMA UDEARTE  (O Disponible | X Ocupado)\n")
     print("      ", end="")
     for c in columnas:
@@ -109,16 +133,28 @@ def mostrar_asientos():
     print()
 
 def imprimir_cartelera(lista):
-    print("-"*72)
-    print(f"{'No.':<4} {'IdPel':<6} {'Día':<10} {'Hora':<6} {'Película':<28} {'Disponibles':>8}")
-    print("-"*72)
-    orden_dias = {"Viernes": 1, "Sabado": 2, "Domingo": 3}
-    lista_ordenada = sorted(lista, key=lambda x: (orden_dias.get(x["dia"], 99), x["hora"], x["pelicula"]))
-    for idx, f in enumerate(lista_ordenada, start=1):
+   """
+   Recibe una cartelera (una lista de funciones) y la muestra ordenada por día, 
+   hora y película. Se usa tanto para las funciones del fin de semana 
+   como para las del próximo fin de semana.
+   """
+   
+   print("-"*72)
+   print(f"{'No.':<4} {'IdPel':<6} {'Día':<10} {'Hora':<6} {'Película':<28} {'Disponibles':>8}")
+   print("-"*72)
+   orden_dias = {"Viernes": 1, "Sabado": 2, "Domingo": 3}
+   lista_ordenada = sorted(lista, key=lambda x: (orden_dias.get(x["dia"], 99), x["hora"], x["pelicula"]))
+   for idx, f in enumerate(lista_ordenada, start=1):
         print(f"{idx:<4} {f['id']:<6} {f['dia']:<10} {f['hora']:<6} {f['pelicula']:<28} {f['disponibles']:>8}")
-    print("-"*72)
+   print("-"*72)
 
 def obtener_funciones_por_pelicula(lista_funciones, nombre_pelicula):
+    """
+    Devuelve todas las funciones filtradas de una película específica.
+    Sirve para que el usuario vea solo los horarios disponibles de la 
+    película que eligió.
+    """
+    
     return [f for f in lista_funciones if f["pelicula"].lower() == nombre_pelicula.lower()]
 
 
@@ -127,6 +163,13 @@ def obtener_funciones_por_pelicula(lista_funciones, nombre_pelicula):
 # ============================
 
 def registrar_usuario():
+    """
+    Pide los datos personales del usuario: nombre, apellido, documento y 
+    tipo de vínculo. Valida que los datos sean correctos 
+    (sin números, tamaño mínimo, etc). Después asigna el precio del tiquete
+    según el vínculo. Finalmente guarda al usuario en la lista usuarios_registrados.
+    """
+    
     limpiar_pantalla()
     mostrar_titulo()
     print("\n=== REGISTRO DE USUARIO ===\n")
@@ -191,6 +234,13 @@ def registrar_usuario():
 # ============================
 
 def registrar_reserva(usuario):
+    """
+    Permite al usuario registrar una reserva de película y asiento. Muestra la 
+    cartelera del fin de semana, deja elegir película y función. Después muestra
+    los asientos y permite seleccionar uno. Marca el asiento como ocupado, 
+    descuenta un cupo disponible y guarda la reserva en la lista reservas.
+    """
+    
     limpiar_pantalla()
     mostrar_titulo()
     print("=== REGISTRAR RESERVA ===\n")
@@ -267,6 +317,12 @@ def registrar_reserva(usuario):
 # ============================
 
 def cancelar_reserva(usuario):
+    """
+    Busca todas las reservas hechas por el usuario. Permite elegir cuál quiere 
+    cancelar. Libera el asiento (lo pone en O), aumenta nuevamente los cupos 
+    de la función y elimina la reserva de la lista.
+    """
+    
     limpiar_pantalla()
     mostrar_titulo()
     print("=== CANCELAR RESERVA ===\n")
@@ -305,6 +361,12 @@ def cancelar_reserva(usuario):
 # ============================
 
 def admin_login():
+    """
+    Pide usuario y contraseña del administrador. Verifica las credenciales 
+    con el diccionario admin_credenciales. Si son correctas, envía al menú de 
+    administrador. Si son incorrectas, solo muestra un mensaje y regresa.
+    """
+    
     limpiar_pantalla()
     mostrar_titulo()
     print("=== ACCESO ADMINISTRADOR ===\n")
@@ -394,6 +456,13 @@ def admin_menu():
 # ============================
 
 def main():
+    """
+    Es el centro del programa. Muestra el menú principal y dependiendo de la 
+    opción llama a las funciones: registrar usuario, registrar reserva, 
+    cancelar reserva, ver cartelera, entrar como admin o salir.
+    También controla si el usuario está registrado antes de reservar o cancelar.
+    """
+    
     usuario = None
 
     while True:
