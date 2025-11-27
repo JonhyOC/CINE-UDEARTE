@@ -131,8 +131,6 @@ El administrador puede consultar:
 ## 🟦 SALIR DEL PROGRAMA (OPCIÓN 6)
 
 Desde el menú principal se elige la opción **"6"**.  
-
 El sistema muestra un mensaje de despedida y finaliza la ejecución.
 
-El sistema muestra un mensaje de despedida y finaliza la ejecución.
 ---
