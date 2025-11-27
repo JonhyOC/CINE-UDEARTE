@@ -341,6 +341,9 @@ K ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 ### v2.5.0 Actualización del codigo.
 
     La actualización hecha hasta ahora permite una funcionabilidad casi completa donde se registran todos los procedimientos      hechos por el ó los usuarios. También se añade la función de administrador que permite a los usuarios registrados con         nombre y contraseña poder acceder a los detalles de registro con toda la información necesaria para hacer um informe          completo.
-   
 
- 
+### v2.6.0. Manual de Usuario.
+
+    En ésta etapa del versionado el usuario cuenta con el manual correspondiente al uso del software, donde se especifica de      manera detallada el paso a paso para llevar a cabo todas las características con las que cumple el programa.
+    
+   
